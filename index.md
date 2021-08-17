@@ -1,15 +1,15 @@
 ---
 layout: entry
-title: Guía de Anotación - Metástasis a Distancia - FALP y UCH.
+title: Guía de Anotación - Metástasis a Distancia
 ---
 
-Esta página corresponde al documento que guiará las anotaciones para el proyecto de "Estadificación automática de Metástasis a distancia" realizado en conjunto entre la Facultad de Medicina y la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile y la Fundación Arturo López Pérez.
+Este documento que guiará las anotaciones para el proyecto de "Estadificación automática de Metástasis a distancia" realizado en conjunto entre la Facultad de Medicina y la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile y la Fundación Arturo López Pérez.
 
 ## Table of contents
 
 * [Introducción](#introducción)
 * [Clasificación TNM de Tumores Malignos](#clasificación-tnm-de-tumores-malignos)
-* [How does it work?](#how-does-it-work)
+* [Entidades a anotar](#entidades-a-anotar)
 * [Getting started](#getting-started)
 * [Editing documents](#editing-documents)
 * [Adding documents](#adding-documents)
@@ -93,12 +93,58 @@ Los ganglios linfáticos regionales son:
     - Nivel I (axila baja): ganglios linfáticos laterales al borde lateral del músculo pectoral menor
     - Nivel II (axila media): ganglios linfáticos entre los bordes medial y lateral del músculo pectoral menor y los ganglios linfáticos interpectorales (Rotter)
     - Nivel III (axila apical): los ganglios linfáticos apicales y los que se encuentran medialmente al margen medial del músculo pectoral menor, excluyendo los designados como subclaviculares o infraclaviculares.
-- Infraclavicular (subclavicular) (ipsilateral)
+- Infraclavicular (subclavicular, ipsilateral)
 - Mamario interno (ipsilateral): ganglios linfáticos en los espacios intercostales a lo largo del borde del esternón en la fascia endotorácica.
 - Supraclavicular (ipsilateral)
 ## Clasificación M: 
 - M0: Ausencia de metástasis a distancia
 - M1: Presencia de metástasis a distancia
+
+## Entidades a Anotar
+
+El objetivo de esta tarea es la anotar las menciones de las siguientes entidades descritas en cada documento:
+- Menciones de metástasis a distancia afirmativas
+- Menciones de metástasis a distancia negadas
+
+Los documentos a anotar corresponden a reportes de las siguientes técnicas imagenológicas, descritas por médico radiólogo:
+- Tomografía Computada
+- Resonancia Magnética
+- Tomografía de emisión de positrones con tomografía computada (PET-CT). 
+
+Solo se deberá anotar **la palabra o frase específica** que indique presencia o ausencia de metástasis a distancia, es decir, donde se descarte. 
+
+No se deberá anotar la parte del cuerpo u otra información extra a lo mencionado anteriormente.
+
+## Etiquetas
+
+Según la clasificación TNM entonces, la clasificación de metástasis a distancia se define como [M](). 
+
+En el caso de una mención del hallazgo de metástasis a distancia positiva o afirmativa, se definirá como [M1]()
+
+~~~ ann
+Sin embargo, persisten incontables focos hipermetabólicos en practicamente todo el esqueleto axial y apendicular visible, con SUV máximo 8,3 a nivel de L5.
+T1 M1 35 57 focos hipermetabólicos
+~~~
+
+En el caso de una mención del hallazgo de metástasis a distancia negada o en caso de que se mencione para descartar, se definirá como [M0]()
+
+~~~ ann
+Cuello: Los distintos compartimentos cervicales son de amplitud conservada, no se identifica masas ni adenopatías hipermetabólicas.
+T1 M0 93 98 masas
+T2 M0 102 130 adenopatías hipermetabólicas
+~~~
+
+## Reglas de Anotación 
+
+Para el desarrollo de un proceso de anotación coherente y de calidad, hemos definido las siguientes reglas: 
+
+- **Reglas Generales (G)** – Reglas generales del proceso de anotación
+- **Reglas Positivas (P)** – Qué anotar 
+- **Reglas Negativas (N)** – Qué no anotar
+- **Reglas Ortográficas (O)** – Consideraciones de ortografía y tipografía
+
+
+
 
 
 

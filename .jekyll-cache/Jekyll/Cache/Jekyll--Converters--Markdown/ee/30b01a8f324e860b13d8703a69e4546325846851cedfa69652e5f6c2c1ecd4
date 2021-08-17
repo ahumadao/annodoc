@@ -1,0 +1,1296 @@
+I"]�<p>Esta página corresponde al documento que guiará las anotaciones para el proyecto de “Estadificación automática de Metástasis a distancia” realizado en conjunto entre la Facultad de Medicina y la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile y la Fundación Arturo López Pérez.</p>
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<ul>
+  <li><a href="#introducción">Introducción</a></li>
+  <li><a href="#clasificación-tnm-de-tumores-malignos">Clasificación TNM de Tumores Malignos</a></li>
+  <li><a href="#entidades-a-anotar">Entidades a anotar</a></li>
+  <li><a href="#getting-started">Getting started</a></li>
+  <li><a href="#editing-documents">Editing documents</a></li>
+  <li><a href="#adding-documents">Adding documents</a></li>
+  <li><a href="#visualizations">Visualizations</a></li>
+  <li><a href="#collections">Collections</a></li>
+  <li><a href="#configuration">Configuration</a></li>
+  <li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+
+<h2 id="introducción">Introducción</h2>
+
+<p>Esta guía tiene por objetivo describir las especificaciones para la anotación de menciones relacionadas a la presencia o ausencia de metástasis a distancia en reportes de imagenología de la Fundación Arturo López Pérez (FALP).</p>
+
+<p>Los textos de exámenes a anotar serán:</p>
+
+<ul>
+  <li>Tomografía Computarizada</li>
+  <li>Resonancia Magnética Nuclear</li>
+  <li>PET-CT</li>
+</ul>
+
+<p>Correspondientes a pacientes con:</p>
+<ul>
+  <li>Cáncer de Próstata</li>
+  <li>Cáncer Colorrectal</li>
+  <li>Cáncer de Mama</li>
+</ul>
+
+<p>La anotación se realizará en base a la clasificación TNM de tumores malignos en la que se explicita para cada cáncer, las características que determinan la definición de metástasis a distancia.</p>
+
+<h2 id="clasificación-tnm-de-tumores-malignos">Clasificación TNM de Tumores Malignos</h2>
+
+<p>La <a href="https://www.uicc.org/resources/tnm">Clasificación TNM de tumores malignos</a> es el estándar más utilizado para clasificar el estado de avance de un tumor, también llamada estadificación. Es desarrollado y mantenido por la <a href="https://www.uicc.org/who-we-are/about-us">Unión para el Control del Cáncer Internacional</a> y hasta ahora la edición vigente es la 8va.</p>
+
+<p>Esta clasificación permite planificar el tratamiento, entregar una idea del pronóstico del paciente, aportar la evaluación de los tratamientos, facilitar el intercambio de información y contribuir a la investigación y vigilancia epidemiológica en cáncer.</p>
+
+<p>El sistema de clasificación se divide en:</p>
+<ul>
+  <li>T: Tamaño y extensión del tumor principal.</li>
+  <li>N: Presencia o ausencia y extensión del cáncer hacia los ganglios o nódulos linfáticos cercanos.</li>
+  <li>M: Presencia o ausencia de cáncer metastásico a distancia.</li>
+</ul>
+
+<p>Según esta clasificación, la metástasis puede definirse como metástasis a linfonodos regionales (cercanos al tumor primario) o como metástasis a distancia. Ésta última se define como aquella metástasis que invade órganos o linfonodos no regionales. Según está clasificación la presencia de metástasis se denomina M1 y la ausencia de metástasis a distancia como M0. Además, se puede subdividir en M1a, M1b y M1c según el sitio que está infiltrado y que dependerá de cada cáncer.</p>
+
+<p>En el caso de los cánceres mencionados, la estadificación de metástasis a distancia, según el <a href="https://drive.google.com/file/d/1OAgYj1EUuTKrI_W4bsaKYvdbKSXHuSuU/view?usp=sharing">Manual de la Clasificación TNM de Tumores Malignos</a> se describe de la siguiente manera:</p>
+
+<h2 id="metástasis-a-distancia-en-cáncer-de-próstata">Metástasis a distancia en Cáncer de Próstata:</h2>
+
+<p>Toda lesión neoplásica que esté fuera de la pelvis verdadera y fuera del límite anatómico de la bifurcación de las arterias iliacas comunes.</p>
+
+<h3 id="clasificación-m">Clasificación M:</h3>
+<ul>
+  <li>M0: Sin metástasis a distancia</li>
+  <li>M1: Metástasis a distancia
+    <ul>
+      <li>M1a: Ganglio(s) linfático(s) no regional(es)</li>
+      <li>M1b:  Hueso(s)</li>
+      <li>M1c:  Otro(s) lugar(es)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="metástasis-a-distancia-en-cáncer-colorrectal">Metástasis a distancia en Cáncer Colorrectal:</h2>
+
+<p>Para definir la metástasis a distancia, es necesario conocer el compromiso de linfonodos regionales según segmento colorrectal. Las metástasis en ganglios distintos de los enumerados a continuación se clasifican como metástasis a distancia.</p>
+
+<p>Los ganglios linfáticos regionales son:</p>
+<ul>
+  <li><strong>Ciego</strong>: ganglios ileocólico y cólico derecho</li>
+  <li><strong>Colon</strong> ascendente: ganglios ileocólico, cólico derecho y cólico medio.</li>
+  <li><strong>Flexión hepática</strong>: ganglios cólico derecho y cólico medio.</li>
+  <li><strong>Transverso</strong>: ganglios colon cólico derecho, cólico medio, cólico izquierdo y mesentérico inferior.</li>
+  <li><strong>Esplénico</strong>: ganglios flexión cólica media, cólica izquierda y mesentérica inferior.</li>
+  <li><strong>Colon descendente</strong>: ganglios cólico izquierdo y mesentérico inferior.</li>
+  <li><strong>Colon sigmoide</strong>: ganglios sigmoide, cólico izquierdo, recto superior (hemorroidal), mesentérico inferior y rectosigmoide.</li>
+  <li><strong>Recto</strong>: ganglios rectal superior, medio e inferior (hemorroidal), mesentérico inferior, ilíaco interno, mesorrectal (paraproctal), sacro lateral, presacro y promontorio sacro (Gerota).</li>
+</ul>
+
+<h3 id="clasificación-m-1">Clasificación M:</h3>
+
+<ul>
+  <li>M0: Ausencia de metástasis a distancia</li>
+  <li>M1: Presencia de metástasis a distancia
+    <ul>
+      <li>M1a: Metástasis limitadas a un órgano (hígado, pulmón, ovario, ganglio(s) linfático(s) no regional(es)) sin metástasis peritoneales.</li>
+      <li>M1b: Metástasis en más de un órgano.</li>
+      <li>M1c: Metástasis en el peritoneo con o sin afectación de otros órganos TNM</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="metástasis-a-distancia-en-cáncer-de-mama">Metástasis a distancia en Cáncer de Mama:</h2>
+<p>Para definir la metástasis a distancia, es necesario conocer el compromiso de linfonodos regionales.</p>
+
+<p>Los ganglios linfáticos regionales son:</p>
+<ul>
+  <li>Axilares (ipsilaterales): ganglios interpectorales (Rotter) y ganglios linfáticos a lo largo de la vena axilar y sus afluentes, que pueden dividirse en los siguientes niveles:
+    <ul>
+      <li>Nivel I (axila baja): ganglios linfáticos laterales al borde lateral del músculo pectoral menor</li>
+      <li>Nivel II (axila media): ganglios linfáticos entre los bordes medial y lateral del músculo pectoral menor y los ganglios linfáticos interpectorales (Rotter)</li>
+      <li>Nivel III (axila apical): los ganglios linfáticos apicales y los que se encuentran medialmente al margen medial del músculo pectoral menor, excluyendo los designados como subclaviculares o infraclaviculares.</li>
+    </ul>
+  </li>
+  <li>Infraclavicular (subclavicular, ipsilateral)</li>
+  <li>Mamario interno (ipsilateral): ganglios linfáticos en los espacios intercostales a lo largo del borde del esternón en la fascia endotorácica.</li>
+  <li>Supraclavicular (ipsilateral)
+    <h2 id="clasificación-m-2">Clasificación M:</h2>
+  </li>
+  <li>M0: Ausencia de metástasis a distancia</li>
+  <li>M1: Presencia de metástasis a distancia</li>
+</ul>
+
+<h2 id="entidades-a-anotar">Entidades a Anotar</h2>
+
+<p>El objetivo de esta tarea es la anotar las menciones de las siguientes entidades descritas en cada documento:</p>
+<ul>
+  <li>Menciones de metástasis a distancia afirmativas</li>
+  <li>Menciones de metástasis a distancia negadas</li>
+</ul>
+
+<p>Los documentos a anotar corresponden a reportes de las siguientes técnicas imagenológicas, descritas por médico radiólogo:</p>
+<ul>
+  <li>Tomografía Computada</li>
+  <li>Resonancia Magnética</li>
+  <li>Tomografía de emisión de positrones con tomografía computada (PET-CT).</li>
+</ul>
+
+<p>Solo se deberá anotar <strong>la palabra o frase específica</strong> que indique presencia o ausencia de metástasis a distancia, es decir, donde se descarte.</p>
+
+<p>No se deberá anotar la parte del cuerpo u otra información extra a lo mencionado anteriormente.</p>
+
+<h2 id="etiquetas">Etiquetas</h2>
+
+<p>Según la clasificación TNM entonces, la clasificación de metástasis a distancia se define como <a href="">M</a>.</p>
+
+<p>En el caso de una mención del hallazgo de metástasis a distancia positiva o afirmativa, se definirá como <a href="">M1</a></p>
+
+<pre><code class="language-ann">Sin embargo, persisten incontables focos hipermetabólicos en practicamente todo el esqueleto axial y apendicular visible, con SUV máximo 8,3 a nivel de L5.
+T1 M1 35 57 focos hipermetabólicos
+</code></pre>
+
+<p>En el caso de una mención del hallazgo de metástasis a distancia negada o en caso de que se mencione para descartar, se definirá como <a href="">M0</a></p>
+
+<pre><code class="language-ann">Cuello: Los distintos compartimentos cervicales son de amplitud conservada, no se identifica masas ni adenopatías hipermetabólicas.
+.
+T1 M0 93 98 masas
+T2 M0 adenopatías hipermetabólicas
+</code></pre>
+
+<p>A brief
+<a href="http://www2.lingfil.uu.se/SLTC2014/abstracts/sltc2014_submission_32.pdf">introduction of Annodoc</a>
+[PDF] was presented at
+<a href="http://www2.lingfil.uu.se/SLTC2014/">SLTC’14</a>.</p>
+
+<p>For example, consider the following fragment of documentation</p>
+
+<div class="documentation-example">
+  <p>Mentions of person names are annotated as <a href="">PERSON</a></p>
+
+  <pre><code class="language-ann">Barack Obama is the current president.
+T1 PERSON 0 12 Barack Obama
+</code></pre>
+
+  <p><span style="float:right;font-size:75%;opacity:0.5">(Not seeing a visualization above? See <a href="#troubleshooting">troubleshooting</a>)</span></p>
+
+</div>
+
+<p>this example is generated from the following input:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mentions of person names are annotated as [PERSON]()
+
+~~~ ann
+Barack Obama is the current president.
+T1 PERSON 0 12 Barack Obama
+~~~
+</code></pre></div></div>
+
+<h2 id="how-does-it-work">How does it work?</h2>
+
+<p>The text content of Annodoc documents is in the simple <a href="http://daringfireball.net/projects/markdown/">Markdown</a>
+format (with the option to include HTML), and the data for the
+visualizations is represented in any of a number of supported
+annotation formats such as <a href="http://nlp.stanford.edu/software/stanford-dependencies.shtml">Stanford dependency</a>, <a href="http://ilk.uvt.nl/conll/#dataformat">CoNLL-X</a>, 
+<a href="http://universaldependencies.github.io/docs/format.html">CoNLL-U</a>, or <a href="http://brat.nlplab.org/standoff.html">.ann standoff</a>.</p>
+
+<p>The final documents seen in the browser are a combination of (X)HTML
+and <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a> for the visualizations. The primary tools for generating the
+final documents from the source are the <a href="http://jekyllrb.com/">Jekyll</a> static web site
+generator, which converts Markdown into (X)HTML, and the <a href="http://brat.nlplab.org">brat</a>
+annotation tool, which generates the SVG visualizations, with help
+from some Annodoc-specific extensions.</p>
+
+<p>The following figure shows the primary stages of processing.</p>
+
+<p><img style="width:100%" src="static/img/processing.png" /></p>
+
+<p>In addition to Markdown processing, Jekyll provides numerous other
+features such as document collection management as well as templating
+and simple scripting using the <a href="http://wiki.shopify.com/Liquid">Liquid</a> language, and Annodoc provides
+various facilities for supporting guideline development such as
+automatic linking of defined types.</p>
+
+<p>Finally, to support the development and maintenance of complex sets of
+documentation, Annodoc features close integration with the <a href="http://git-scm.com">Git</a>
+distributed version control system through the <a href="http://github.com">GitHub</a> web-based
+hosting service, allowing automatic conversion and publication of the
+most recent version of the online documentation each time the sources
+are updated.</p>
+
+<p>For more information on these technologies, please see the following:</p>
+
+<ul>
+  <li>Jekyll: <a href="http://jekyllrb.com/">http://jekyllrb.com/</a></li>
+  <li>brat: <a href="http://brat.nlplab.org">http://brat.nlplab.org</a></li>
+  <li>Markdown: <a href="http://daringfireball.net/projects/markdown/">http://daringfireball.net/projects/markdown/</a></li>
+  <li>Kramdown (Markdown superset): <a href="http://kramdown.gettalong.org/">http://kramdown.gettalong.org/</a></li>
+  <li>Liquid: <a href="http://wiki.shopify.com/Liquid">http://wiki.shopify.com/Liquid</a></li>
+  <li>Stanford Dependency format: <a href="http://nlp.stanford.edu/software/stanford-dependencies.shtml">http://nlp.stanford.edu/software/stanford-dependencies.shtml</a></li>
+  <li>CoNLL-X format: <a href="http://ilk.uvt.nl/conll/#dataformat">http://ilk.uvt.nl/conll/#dataformat</a></li>
+  <li>CoNLL-U format: <a href="http://universaldependencies.github.io/docs/format.html">http://universaldependencies.github.io/docs/format.html</a></li>
+  <li>.ann standoff format: <a href="http://brat.nlplab.org/standoff.html">http://brat.nlplab.org/standoff.html</a></li>
+  <li>Git: <a href="http://git-scm.com/">http://git-scm.com/</a></li>
+  <li>GitHub: <a href="http://github.com">http://github.com</a></li>
+</ul>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>First, you need to get a copy of the Annodoc system. If you don’t have
+one already, head over to the online <a href="https://github.com/spyysalo/annodoc">Annodoc repository</a> and
+download, clone or fork the repository. The former two options
+(download or clone) will give you a local copy of the system (see
+<a href="#running-locally">running locally</a> below), while cloning the
+repository can allow you to work within the online version control
+system (see <a href="#working-online">working online</a>).</p>
+
+<p>To <strong>download</strong> the system source, navigate to the <a href="https://github.com/spyysalo/annodoc">Annodoc
+repository</a> and click on the <code class="language-plaintext highlighter-rouge">Download ZIP</code> link on the right-hand
+toolbar. You should then unpack the downloaded <code class="language-plaintext highlighter-rouge">.zip</code> file in an
+appropriate location and move to the directory with the source.  For
+the next steps, see <a href="#running-locally">running locally</a> below.</p>
+
+<p>To <strong>clone</strong> the system, you will need the <a href="http://git-scm.com">Git</a> version control
+system. After making sure that Git is available, navigate to the
+<a href="https://github.com/spyysalo/annodoc">Annodoc repository</a> and copy the “clone URL” from the right-hand
+toolbar. Then, run the command <code class="language-plaintext highlighter-rouge">git clone &lt;URL&gt;</code>, where <code class="language-plaintext highlighter-rouge">&lt;URL&gt;</code> is the
+clone URL copied previously. Finally, move to the cloned directory and
+see <a href="#running-locally">running locally</a> below for the next steps.</p>
+
+<p>To <strong>fork</strong> the system, you will need a GitHub account. Then, while
+logged in to GitHub, navigate to the <a href="https://github.com/spyysalo/annodoc">Annodoc repository</a> and click on
+the <code class="language-plaintext highlighter-rouge">Fork</code> button on the top right. This will give you a copy of the
+repository that you can work on in GitHub. You can then download or
+clone this copy, as above, to <a href="#running-locally">run the system
+locally</a>, or <a href="#working-online">work online</a> (see
+below).</p>
+
+<h3 id="running-locally">Running locally</h3>
+
+<p><strong>Please note</strong>: the Annodoc system has been developed and tested in a
+linux environment and has so far not been specifically tested on
+Windows.  We strongly recommend a Unix or workalike system (OSX or
+linux) for running the system locally.</p>
+
+<p>For running Annodoc locally, you will need to have a recent version of
+<a href="http://jekyllrb.com/">Jekyll</a>. In particular, version 2.0 or greater is required for
+<a href="#collections">collection</a> features.</p>
+
+<p>After getting a local copy of the system (see <a href="#getting-started">Getting
+started</a> above), you can build the site from sources
+and serve the resulting documents by navigating to the directory with
+annodoc sources and using the command</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve --watch
+</code></pre></div></div>
+
+<p>(here, the option <code class="language-plaintext highlighter-rouge">--watch</code> specifies that Jekyll should watch the
+source documents for changes and rebuild the site when there are any.)</p>
+
+<p>If the above command runs successfully, you should see something like
+the following:</p>
+
+<pre><code>$ jekyll serve --watch
+            Source: .
+       Destination: ./_site
+      Generating... done.
+ Auto-regeneration: enabled
+    Server address: http://0.0.0.0:4000/
+  Server running... press ctrl-c to stop.</code></pre>
+
+<p>Here, the value <code class="language-plaintext highlighter-rouge">Server address</code> (commonly <code class="language-plaintext highlighter-rouge">http://0.0.0.0:4000/</code>) is
+a URL where Jekyll is serving the site from. You should be able to see
+the documentation by navigating to this address using your browser.
+If you do not see the documentation at this address, please see
+<a href="#troubleshooting">troubleshooting</a> below.</p>
+
+<h3 id="working-online">Working online</h3>
+
+<p>In addition to running Jekyll locally (see <a href="#running-locally">running
+locally</a>), it is possible to use the Annodoc system
+entirely online, relying on the facilities of <a href="http://github.com">GitHub</a> (or a
+workalike) for generating the site from source using Jekyll. The
+following assumes that the repository is stored in <a href="http://github.com">GitHub</a> unless
+separately mentioned.</p>
+
+<p>GitHub provides website hosting with Jekyll support through <a href="https://pages.github.com/">GitHub
+pages</a>. Using GitHub pages with a GitHub
+repository is largely automatic: simply make sure that the source
+documents are held in the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch of your repository, and
+the processed final documents will be automatically made available at
+<code class="language-plaintext highlighter-rouge">http://username.github.io/repository</code>, where <code class="language-plaintext highlighter-rouge">username</code> is your
+GitHub username and <code class="language-plaintext highlighter-rouge">repository</code> is the name of the repository.</p>
+
+<p><strong>Note:</strong> GitHub pages are publicly visible even for private GitHub
+repositories.</p>
+
+<p>For further information setting up GitHub pages, please refer to the
+documentation at <a href="https://pages.github.com/">https://pages.github.com/</a>.</p>
+
+<h2 id="editing-documents">Editing documents</h2>
+
+<p>You can either edit source documents directly in your favorite text
+editor, or via a simple online interface.</p>
+
+<h3 id="editing-locally">Editing locally</h3>
+
+<p>If you have a local copy of an Annodoc system (see <a href="#getting-started">Getting
+started</a> above), you can edit any of the source
+documents directly, using any text editor.</p>
+
+<p>Most typically, changes are made to one or more Markdown (<code class="language-plaintext highlighter-rouge">.md</code>)
+files. To see the effect of these changes in the final documentation,
+the source needs to be processed through Jekyll. (see <a href="#running-locally">Running
+locally</a>; note that this processing is automatic
+with the <code class="language-plaintext highlighter-rouge">--watch</code> option).</p>
+
+<p>If you are working with Git for version control, you should commit and
+push your changes to the Git repository when you are done, e.g. by
+running the following</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit DOCUMENT.md
+git push
+</code></pre></div></div>
+
+<p>(where <code class="language-plaintext highlighter-rouge">DOCUMENT.md</code> is the name of the changed document.)</p>
+
+<p>Alternatively, you can run <code class="language-plaintext highlighter-rouge">git commit -a</code> to commit all changed
+documents.</p>
+
+<h3 id="editing-online">Editing online</h3>
+
+<p>If you are working with a repository stored in GitHub (or similar),
+you can use online editing features.</p>
+
+<p><strong>Please note</strong>: the “edit page” link will only appear if the
+<code class="language-plaintext highlighter-rouge">editurl</code> site variable is set in <code class="language-plaintext highlighter-rouge">_config.yml</code> (see
+<a href="#configuration">Configuration</a>). Please make sure that your
+configuration is correctly set up to use these features.</p>
+
+<p>When configured for online editing, the header of each Annodoc
+documentation page will contain an “edit page” link that leads to the
+<a href="http://github.com">GitHub</a> online editing page, shown in the following:</p>
+
+<p><img style="width:100%; border:1px solid lightgray" src="static/img/gh-edit.png" /></p>
+
+<p>This feature allows version-controlled documents to be edited directly
+from your browser. To get started, the only relevant parts are the
+large black edit area and the “Cancel” and “Commit changes” buttons at
+the bottom.</p>
+
+<p>To give this a quick try, click on the following link: <a href="https://github.com/spyysalo/annodoc/edit/gh-pages/sandbox.md">edit sandbox
+document</a>.  This should open a
+“sandbox” document in a new tab. (If this does not work, please see
+<a href="#troubleshooting">troubleshooting</a> below.) After testing it out, feel
+free to either cancel without saving your changes, or save them into
+the version control system using the “Commit changes” button. You can
+see the resulting document here (reload to see changes, and please
+note it may take some time for the changes to show up.)</p>
+
+<p>For experimenting with the system, we recommend using the sandbox
+document instead of any “real” documents.</p>
+
+<p>To edit the actual documentation, first find the page you’re
+interested in. Then,</p>
+
+<ul>
+  <li>Click on the “edit page” link on the top</li>
+  <li>Make your changes in the GitHub editor</li>
+  <li>(Optional: add a message describing your changes in the “Commit changes” box)</li>
+  <li>Click on “Commit changes”</li>
+</ul>
+
+<p>Finally, wait a moment for your revisions to the documentation to be
+compiled (normally no more than 10 seconds) and reload the
+documentation page to make sure they look right.</p>
+
+<h2 id="adding-documents">Adding documents</h2>
+
+<p>To add new documents into the system, simply create a new <code class="language-plaintext highlighter-rouge">.md</code>
+document and add the following front matter at the beginning of the
+document:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: entry
+title: DOCUMENT-TITLE
+---
+</code></pre></div></div>
+
+<p>(where <code class="language-plaintext highlighter-rouge">DOCUMENT-TITLE</code> is the title you wish to give to the
+document.)</p>
+
+<p>This <a href="http://yaml.org/">YAML</a> front matter is required for Jekyll to identify the
+document as markdown.</p>
+
+<p>If you are using the GitHub (or similar), you can create new documents
+simply by clicking on the <code class="language-plaintext highlighter-rouge">+</code> sign at the top or the repository file
+listing.</p>
+
+<p>If you are working locally with Git for version control, you can
+create new documents with any text editor and then add newly created
+documents to the Git repository, e.g. by running the following
+commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add DOCUMENT.md
+git commit
+git push
+</code></pre></div></div>
+
+<p>(where <code class="language-plaintext highlighter-rouge">DOCUMENT.md</code> is the name of the new document.)</p>
+
+<h2 id="visualizations">Visualizations</h2>
+
+<p>As explained in the section <a href="#what-is-annodoc">what is annodoc?</a>,
+visualizations are created using a simple syntax that identifies a
+section of the document as being annotation in some particular format.
+The system then replaces these sections with the corresponding
+visualizations.</p>
+
+<p>This section provides examples of various ways to create
+visualizations.</p>
+
+<h3 id="visualization-basics">Visualization basics</h3>
+
+<p>There are a number of ways to add visualizations into a document.  The
+most straightforward one is to wrap annotations in a format <code class="language-plaintext highlighter-rouge">FORMAT</code>
+with the lines <code class="language-plaintext highlighter-rouge">~~~ FORMAT</code> (before) and <code class="language-plaintext highlighter-rouge">~~~</code> (after). For example,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ ann
+Barack Obama is the current president.
+T1 PERSON 0 12 Barack Obama
+~~~
+</code></pre></div></div>
+
+<p>gives the following visualization:</p>
+
+<pre><code class="language-ann">Barack Obama is the current president.
+T1 PERSON 0 12 Barack Obama
+</code></pre>
+
+<p>Above, the <code class="language-plaintext highlighter-rouge">FORMAT</code> value <code class="language-plaintext highlighter-rouge">ann</code> specifies that the source content is
+in the <a href="http://brat.nlplab.org/standoff.html">.ann standoff</a> format. Currently, the following formats are
+supported:</p>
+
+<ul>
+  <li>.ann standoff format: <a href="http://brat.nlplab.org/standoff.html">http://brat.nlplab.org/standoff.html</a></li>
+  <li>Stanford Dependency format: <a href="http://nlp.stanford.edu/software/stanford-dependencies.shtml">http://nlp.stanford.edu/software/stanford-dependencies.shtml</a></li>
+  <li>CoNLL-X format: <a href="http://ilk.uvt.nl/conll/#dataformat">http://ilk.uvt.nl/conll/#dataformat</a></li>
+  <li>CoNLL-U format: <a href="http://universaldependencies.github.io/docs/format.html">http://universaldependencies.github.io/docs/format.html</a></li>
+</ul>
+
+<p>Some more simple examples follow.</p>
+
+<p>A single tree in the Stanford Dependency format can be embedded using
+the following syntax:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ sdparse
+Dogs run
+nsubj(run, Dogs)
+~~~
+</code></pre></div></div>
+
+<p>which results in this embedded visualization:</p>
+
+<pre><code class="language-sdparse">Dogs run
+nsubj(run, Dogs)
+</code></pre>
+
+<p>Parses represented in the CoNLL-X format can be embedded as illustrated
+by the following example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ conllx
+1    Dogs   dog    _    NNS    _    2    nsubj
+2    run    run    _    VBP    _    0    ROOT
+~~~
+</code></pre></div></div>
+
+<p>gives</p>
+
+<pre><code class="language-conllx">1    Dogs   dog    _    NNS    _    2    nsubj
+2    run    run    _    VBP    _    0    ROOT
+</code></pre>
+
+<p>Finally, parses in the CoNLL-U format can be embedded as shown below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ conllu
+1    They    they    PRON    PRN    Case=Nom|Num=Plur            2    nsubj    _    _
+2    buy     buy     VERB    VBP    Num=Plur|Per=3|Tense=Pres    0    root     _    _
+3    books   book    NOUN    NNS    Num=Plur                     2    dobj     _    _
+~~~
+</code></pre></div></div>
+
+<p>resulting in</p>
+
+<pre><code class="language-conllu">1    They    they    PRON    PRN    Case=Nom|Num=Plur            2    nsubj    _    _
+2    buy     buy     VERB    VBP    Num=Plur|Per=3|Tense=Pres    0    root     _    _
+3    books   book    NOUN    NNS    Num=Plur                     2    dobj     _    _
+</code></pre>
+
+<p>The remainder of this section provides further details for each
+supported format and additional information on options for embedding
+visualizations.</p>
+
+<h3 id="ann-standoff-format">.ann standoff format</h3>
+
+<p>This section provides information on the .ann standoff (Ann) format.
+For full documentation, please refer to
+<a href="http://brat.nlplab.org/standoff.html">http://brat.nlplab.org/standoff.html</a>.</p>
+
+<h4 id="ann-format-annotation-primitives">Ann format: annotation primitives</h4>
+
+<p>The following example illustrates some of the basic Ann format
+annotation primitives that are supported in visualizations. The
+annotation</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ ann
+Sony formed a joint venture with Ericsson, a company based in Sweden.
+T1 Organization 0 4	Sony
+T2 MERGE-ORG 14 27	joint venture
+T3 Organization 33 41	Ericsson
+E1 MERGE-ORG:T2 Org1:T1 Org2:T3
+T4 Country 62 68	Sweden
+R1 Origin Arg1:T3 Arg2:T4
+A1 Name T4
+~~~
+</code></pre></div></div>
+
+<p>is visualized as follows:</p>
+
+<pre><code class="language-ann">Sony formed a joint venture with Ericsson, a company based in Sweden.
+T1 Organization 0 4	Sony
+T2 MERGE-ORG 14 27	joint venture
+T3 Organization 33 41	Ericsson
+E1 MERGE-ORG:T2 Org1:T1 Org2:T3
+T4 Country 62 68	Sweden
+R1 Origin Arg1:T3 Arg2:T4
+A1 Name T4
+</code></pre>
+
+<p>This example involves <em>text-bound</em> annotations, an <em>attribute</em>
+annotation, an <em>event</em> annotation, and a <em>relation</em> annotation. All
+annotations occupy a single line of the input and begin with a unique
+identifier. The remaining structure varies depending on the annotation
+primitive.</p>
+
+<h4 id="ann-format-text-bound-annotations">Ann format: text-bound annotations</h4>
+
+<p>Text-bound annotations identify a span of text using <code class="language-plaintext highlighter-rouge">(start, end)</code>
+offsets and assign it a type (note that the marked text is repeated
+for reference):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>T1 Organization 0 4	Sony
+T2 MERGE-ORG 14 27	joint venture
+T3 Organization 33 41	Ericsson
+T4 Country 75 81	Sweden
+</code></pre></div></div>
+
+<p>Text-bound annotations can be used, for example, to mark mentions of
+specific named entities in text (<code class="language-plaintext highlighter-rouge">Sony</code>, <code class="language-plaintext highlighter-rouge">Ericsson</code> and <code class="language-plaintext highlighter-rouge">Sweden</code>
+above) or the “triggers” of event annotations (<code class="language-plaintext highlighter-rouge">joint venture</code>).</p>
+
+<p>In addition to simple <code class="language-plaintext highlighter-rouge">(start, end)</code> spans, discontinuous span
+annotations are also supported using the syntax <code class="language-plaintext highlighter-rouge">START END[;START
+END[...]]</code>. For example,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ ann
+Barack and Michelle Obama
+T1 PERSON 0 6;20 25 Barack Obama
+T2 PERSON 11 19 Michelle
+~~~
+</code></pre></div></div>
+
+<p>gives</p>
+
+<pre><code class="language-ann">Barack and Michelle Obama
+T1 PERSON 0 6;20 25 Barack Obama
+T2 PERSON 11 19 Michelle
+</code></pre>
+
+<h4 id="ann-format-attribute-annotations">Ann format: attribute annotations</h4>
+
+<p>Attribute annotation associate either a binary flag (e.g. <code class="language-plaintext highlighter-rouge">IsName</code>) or
+a key-value pair (e.g. <code class="language-plaintext highlighter-rouge">Tense</code>, <code class="language-plaintext highlighter-rouge">Past</code>) with another annotation, such
+as an entity mention (textbound) or an event annotation.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A1 IsName T4
+A2 Tense E1 Past
+</code></pre></div></div>
+
+<h4 id="ann-format-relation-annotations">Ann format: relation annotations</h4>
+
+<p>Relation annotations relate two other annotations and have a type
+(e.g. <code class="language-plaintext highlighter-rouge">Origin</code>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>R1 Origin Arg1:T3 Arg2:T4
+</code></pre></div></div>
+
+<h4 id="ann-format-event-annotations">Ann format: event annotations</h4>
+
+<p>Event annotations associate any number of annotations in specific
+roles (e.g. <code class="language-plaintext highlighter-rouge">Theme</code>, <code class="language-plaintext highlighter-rouge">Cause</code>), identifying the event with a type
+(e.g. <code class="language-plaintext highlighter-rouge">MERGE-ORG</code>) and a textbound annotation expressing it in text.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>E1 MERGE-ORG:T2 Org1:T1 Org2:T3
+</code></pre></div></div>
+
+<h4 id="ann-format-other-annotation-primitives">Ann format: other annotation primitives</h4>
+
+<p>The <a href="http://brat.nlplab.org/standoff.html">.ann standoff</a> format additionally supports equivalence
+relations, normalization annotations and comment (or note)
+annotations. These annotation primitives are presently not supported
+in Annodoc.</p>
+
+<h3 id="stanford-dependency-format">Stanford Dependency format</h3>
+
+<p>This section provides details on the Stanford Dependency (SD) format.</p>
+
+<h4 id="sd-format-basics">SD format basics</h4>
+
+<p>Basic SD format visualizations consist of a single line of text
+followed by any number of typed dependencies between words using the
+simple format <code class="language-plaintext highlighter-rouge">TYPE(FROM, TO)</code>. For example, the input</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ sdparse
+The quick brown fox jumped
+det(fox-4, The-1)
+amod(fox-4, quick-2)
+amod(fox-4, brown-3)
+nsubj(jumped-5, fox-4)
+~~~
+</code></pre></div></div>
+
+<p>gives</p>
+
+<pre><code class="language-sdparse">The quick brown fox jumped
+det(fox-4, The-1)
+amod(fox-4, quick-2)
+amod(fox-4, brown-3)
+nsubj(jumped-5, fox-4)
+</code></pre>
+
+<h4 id="sd-format-ambiguous-tokens">SD format: ambiguous tokens</h4>
+
+<p>If your example has several instances of the same token, you can use
+their position to refer to the exact token. In the following example
+<code class="language-plaintext highlighter-rouge">can-5</code> refers to the fifth token of the sentence, <code class="language-plaintext highlighter-rouge">can</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ sdparse
+I can can the can .
+nsubj(can-3, I)
+aux(can-3, can-2)
+det(can-5,the)
+dobj(can-3,can-5)
+punct(can-3,.)
+~~~
+</code></pre></div></div>
+
+<p>will result in this visualization</p>
+
+<pre><code class="language-sdparse">I can can the can .
+nsubj(can-3, I)
+aux(can-3, can-2)
+det(can-5,the)
+dobj(can-3,can-5)
+punct(can-3,.)
+</code></pre>
+
+<h4 id="sd-format-part-of-speech-tags">SD format: part-of-speech tags</h4>
+
+<p>Part-of-speech (POS) tags are optional and use the format <code class="language-plaintext highlighter-rouge">text/POS</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ sdparse
+POS/NNP tags/NNS can/MD be/VB attached/VBN to/TO tokens/NNS ./.
+nn(tags, POS)
+nsubjpass(attached, tags)
+aux(attached, can)
+auxpass(attached, be)
+prep(attached, to)
+pobj(to, tokens)
+~~~
+</code></pre></div></div>
+
+<pre><code class="language-sdparse">POS/NNP tags/NNS can/MD be/VB attached/VBN to/TO tokens/NNS ./.
+nn(tags, POS)
+nsubjpass(attached, tags)
+aux(attached, can)
+auxpass(attached, be)
+prep(attached, to)
+pobj(to, tokens)
+</code></pre>
+
+<p>If the source text contains any literal slashes (<code class="language-plaintext highlighter-rouge">/</code>), these can be
+escaped using backslash.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ~~~ sdparse
+ \\/\\ escapes/VBZ :/: \\o\//\\o\/
+ nsubj(escapes, \)
+ ~~~
+</code></pre></div></div>
+
+<pre><code class="language-sdparse">\\/\\ escapes/VBZ :/: \\o\//\\o\/
+nsubj(escapes, \)
+</code></pre>
+
+<h3 id="multiple-lines-of-text">Multiple lines of text</h3>
+
+<p>The literal sequence <code class="language-plaintext highlighter-rouge">\n</code> in the SD input text is interpreted as a
+newline. (This sequence should be separated by space from the rest of
+the input.)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ sdparse
+One line \n and another.
+~~~
+</code></pre></div></div>
+
+<p>gives:</p>
+
+<pre><code class="language-sdparse">One line \n and another.
+</code></pre>
+
+<h3 id="conll-x-format">CoNLL-X format</h3>
+
+<p>This section provides information on the visualization of the CoNLL-X
+format.</p>
+
+<h4 id="conll-x-format-basics">CoNLL-X format basics</h4>
+
+<p>The <a href="http://ilk.uvt.nl/conll/#dataformat">CoNLL-X</a> format is a format for representing dependency parses,
+developed as a variant of previous related formats for the 2006
+CoNLL-X shared task on multi-lingual dependency parsing.</p>
+
+<p>Each line in the CoNLL-X format specifies information relating to one
+token (or word). For example, the following defines two words</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ conllx
+1    Dogs   dog    _    NNS    _    2    nsubj    _    _
+2    run    run    _    VBP    _    0    ROOT     _    _
+~~~
+</code></pre></div></div>
+
+<p>visualized as</p>
+
+<pre><code class="language-conllx">1    Dogs   dog    _    NNS    _    2    nsubj    _    _
+2    run    run    _    VBP    _    0    ROOT     _    _
+</code></pre>
+
+<p>The definitions of the various space-separated fields are provided
+in the following.</p>
+
+<h4 id="conll-x-format-field-definitions">CoNLL-X format field definitions</h4>
+
+<p>The CoNLL-X format defines 10 fields separated by space (strictly TAB
+characters in the original definition):</p>
+
+<ol>
+  <li>ID: Token counter, starting at 1 for each new sentence.</li>
+  <li>FORM: Word form or punctuation symbol.</li>
+  <li>LEMMA: Lemma or stem of word form.</li>
+  <li>CPOSTAG: Coarse-grained part-of-speech tag.</li>
+  <li>POSTAG: Fine-grained part-of-speech tag.</li>
+  <li>FEATS: Unordered set of syntactic and/or morphological features.</li>
+  <li>HEAD: Head of the current token.</li>
+  <li>DEPREL: Dependency relation to the HEAD.</li>
+  <li>PHEAD: Projective head of current token.</li>
+  <li>PDEPREL: Dependency relation to the PHEAD.</li>
+</ol>
+
+<p>The current implementation of the visualization only uses the <code class="language-plaintext highlighter-rouge">ID</code>,
+<code class="language-plaintext highlighter-rouge">FORM</code>, <code class="language-plaintext highlighter-rouge">CPOSTAG</code>, <code class="language-plaintext highlighter-rouge">HEAD</code> and <code class="language-plaintext highlighter-rouge">DEPREL</code> attributes.</p>
+
+<h3 id="conll-u-format">CoNLL-U format</h3>
+
+<p>This section provides information on the visualization of the <a href="http://universaldependencies.github.io/docs/format.html">CoNLL-U</a>
+format.</p>
+
+<h4 id="conll-u-format-basics">CoNLL-U format basics</h4>
+
+<p>The CoNLL-U format is a format for representing dependency parses,
+developed in the 
+<a href="universaldependencies.github.io/docs/">Universal Dependencies</a>
+project as a revision of the CoNLL-X format.</p>
+
+<p>Most lines in CoNLL-U format specify the annotation of a single word
+or token. The format uses blank lines to separate sentences (as in
+CoNLL-X), and allows also comment lines beginning with the hash
+character (<code class="language-plaintext highlighter-rouge">#</code>). The following example illustrates these:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ conllu
+# this is one sentence
+1    Dogs   dog    NOUN    NNS    _    2    nsubj    _    _
+2    run    run    VERB    VBP    _    0    ROOT     _    _
+
+# this is a second sentence
+1    Cats   cat    NOUN    NNS    _    2    nsubj    _    _
+2    sleep  sleep  VERB    VBP    _    0    ROOT     _    _
+~~~
+</code></pre></div></div>
+
+<pre><code class="language-conllu"># this is one sentence
+1    Dogs   dog    NOUN    NNS    _    2    nsubj    _    _
+2    run    run    VERB    VBP    _    0    ROOT     _    _
+
+# this is a second sentence
+1    Cats   cat    NOUN    NNS    _    2    nsubj    _    _
+2    sleep  sleep  VERB    VBP    _    0    ROOT     _    _
+</code></pre>
+
+<h4 id="conll-u-format-field-definitions">CoNLL-U format field definitions</h4>
+
+<p>The CoNLL-U format defines 10 fields separated by space (strictly TAB
+characters in the original definition):</p>
+
+<ol>
+  <li>ID: Word index, integer starting at 1 for each new sentence; may be a range for tokens with multiple words.</li>
+  <li>FORM: Word form or punctuation symbol.</li>
+  <li>LEMMA: Lemma or stem of word form.</li>
+  <li>CPOSTAG: Google universal part-of-speech tag from the <a href="http://universaldependencies.github.io/docs/u/pos/index.html">universal POS tag</a> set.</li>
+  <li>POSTAG: Language-specific part-of-speech tag; underscore if not available.</li>
+  <li>FEATS: List of morphological features from the <a href="http://universaldependencies.github.io/docs/u/feat/index.html">universal feature inventory</a> or from a defined language-specific extension; underscore if not available.</li>
+  <li>HEAD: Head of the current token, which is either a value of ID or zero (0).</li>
+  <li>DEPREL: <a href="http://universaldependencies.github.io/docs/u/dep/index.html">Universal Stanford dependency relation</a> to the HEAD (root iff HEAD = 0) or a defined language-specific subtype of one.</li>
+  <li>DEPS: List of secondary dependencies (head-deprel pairs).</li>
+  <li>MISC: Any other annotation.</li>
+</ol>
+
+<p>For the complete documentation on the CoNLL-U format, please see
+<a href="http://universaldependencies.github.io/docs/format.html">http://universaldependencies.github.io/docs/format.html</a>.</p>
+
+<h3 id="alternative-visualization-syntaxes">Alternative visualization syntaxes</h3>
+
+<p>As an alternative to the <code class="language-plaintext highlighter-rouge">~~~</code> syntax, you can use the equivalent HTML
+tag form, where the format specification appears as the value of the
+<code class="language-plaintext highlighter-rouge">class</code> attribute. For example,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="sdparse"&gt;
+Dogs run
+nsubj(run, Dogs)
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>gives</p>
+
+<div class="sdparse">
+Dogs run
+nsubj(run, Dogs)
+</div>
+
+<p>This form is more flexible in allowing e.g. additional attributes
+to control aspects of the visualization. For example,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="sdparse" id="simple-example-parse" tabs="yes"&gt;
+Dogs run
+nsubj(run, Dogs)
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>gives</p>
+
+<div class="sdparse" id="simple-example-parse" tabs="yes">
+Dogs run
+nsubj(run, Dogs)
+</div>
+
+<p>(note the <code class="language-plaintext highlighter-rouge">edit</code> tab on the top right of the visualization.)</p>
+
+<p>The Kramdown variant of Markdown provides an additional syntax for
+specifying attributes called <a href="http://kramdown.gettalong.org/syntax.html#attribute-list-definitions">Attribute List
+Definitions</a>
+(ALDs). Using ALDs, the above example can be alternatively written
+as</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~
+Dogs run
+nsubj(run, Dogs)
+~~~
+{:.sdparse}
+</code></pre></div></div>
+
+<p>giving</p>
+
+<div class="language-plaintext sdparse highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Dogs run
+nsubj(run, Dogs)
+</code></pre></div></div>
+
+<p>ALDs can be used to specify arbitrary attributes. For example, the
+<code class="language-plaintext highlighter-rouge">id</code> and <code class="language-plaintext highlighter-rouge">tabs</code> attributes can be specified as in the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~
+Dogs run
+nsubj(run, Dogs)
+~~~
+{:#simple-example-parse-2 .sdparse tabs="yes"}
+</code></pre></div></div>
+
+<p>which gives</p>
+
+<div id="simple-example-parse-2" class="language-plaintext sdparse highlighter-rouge" tabs="yes"><div class="highlight"><pre class="highlight"><code>Dogs run
+nsubj(run, Dogs)
+</code></pre></div></div>
+
+<p>For full details on this feature, see
+<a href="http://kramdown.gettalong.org/syntax.html#attribute-list-definitions">http://kramdown.gettalong.org/syntax.html#attribute-list-definitions</a>.</p>
+
+<h3 id="other-features">Other features</h3>
+
+<h4 id="editing-controls">Editing controls</h4>
+
+<p>Controls for visualization editing and information is accessible in
+elements with the attribute <code class="language-plaintext highlighter-rouge">tabs="yes"</code> (or any other non-empty
+value):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="ann-annotation" tabs="yes"&gt;
+Barack Obama is the current president.
+T1 PERSON 0 12 Barack Obama
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>This gives:</p>
+
+<div class="ann-annotation" tabs="yes">
+Barack Obama is the current president.
+T1 PERSON 0 12 Barack Obama
+</div>
+
+<p>You can click on the tab on the top right to edit the visualization,
+but note that the edits are not saved anywhere as there’s no
+server. This is mostly useful to build and debug examples.</p>
+
+<h4 id="unicode">Unicode</h4>
+
+<p>Everything is unicode-compliant.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ sdparse
+ロボットは 東大に  入れる か 。/。
+nsubj(入れる, ロボットは)
+nommod(入れる, 東大に)
+~~~
+</code></pre></div></div>
+
+<pre><code class="language-sdparse">ロボットは 東大に  入れる か 。/。
+nsubj(入れる, ロボットは)
+nommod(入れる, 東大に)
+</code></pre>
+
+<h2 id="collections">Collections</h2>
+
+<p><a href="http://jekyllrb.com/docs/collections/">Jekyll collections</a> are a
+recently introduced Jekyll feature that allows sets of related
+documents to be grouped together. Collections support various
+operations that specifically benefit guideline development, such as
+automatic listings and generation of “merged” documents.</p>
+
+<p>As an illustrative example, this Annodoc repository contains two
+collections named <code class="language-plaintext highlighter-rouge">entity</code> and <code class="language-plaintext highlighter-rouge">relation</code> with a few example
+documents. Using the <a href="http://wiki.shopify.com/Liquid">Liquid</a> language, this allows e.g. a listing
+of documents in a specific collection to be created as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% for e in site.entity %}
+* {{ e.title }}
+{% endfor %}
+</code></pre></div></div>
+
+<p>which produces the following:</p>
+
+<ul>
+  <li>
+    <p>ORGANIZATION</p>
+  </li>
+  <li>
+    <p>PERSON</p>
+  </li>
+</ul>
+
+<p>Alternatively, we can produce “merged” documents by importing the
+contents of documents in collections. The following example shows
+the contents of documents in the <code class="language-plaintext highlighter-rouge">entity</code> collection up to the
+first <code class="language-plaintext highlighter-rouge">&lt;!-- details --&gt;</code> marker (if any):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% for e in site.entity %}
+* {{ e.content | split:"&lt;!-- details --&gt;" | first }}
+{% endfor %}
+</code></pre></div></div>
+
+<p>which gives</p>
+
+<ul>
+  <li>
+    <p>References to human groups that have been established for a specific
+purpose are annotated as <code class="language-plaintext highlighter-rouge">ORGANIZATION</code>.</p>
+  </li>
+  <li>
+    <p>References to single individual humans as well as groups of humans are
+annotated as <code class="language-plaintext highlighter-rouge">PERSON</code>.</p>
+  </li>
+</ul>
+
+<p>We can similarly generate a listing of all collections, linking all
+documents in those collections:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% for c in site.collections %}
+* &lt;b&gt;Collection&lt;/b&gt;: {{ c.label }}
+  {% for d in c.docs %}
+  * [{{ d.title }}]({{ d.url | remove_first:'/' }}): {{ d.shortdef }}
+  {% endfor %}
+{% endfor %}
+</code></pre></div></div>
+
+<p>which gives</p>
+
+<ul>
+  <li>
+    <p><b>Collection</b>: entity</p>
+
+    <ul>
+      <li>
+        <p><a href="entity/organization.html">ORGANIZATION</a>: human groups established for a purpose</p>
+      </li>
+      <li>
+        <p><a href="entity/person.html">PERSON</a>: individual human or group of humans</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><b>Collection</b>: posts</p>
+  </li>
+  <li>
+    <p><b>Collection</b>: relation</p>
+
+    <ul>
+      <li><a href="relation/family.html">FAMILY</a>: familial relationship between humans</li>
+    </ul>
+  </li>
+</ul>
+
+<p>To add documents to a collection, simply add them to the corresponding
+directory (e.g. <code class="language-plaintext highlighter-rouge">_type/</code> for the collection <code class="language-plaintext highlighter-rouge">type</code>). To add new
+collections to the system, first create the directory, and then add
+the corresponding entry to <code class="language-plaintext highlighter-rouge">collections</code> in <code class="language-plaintext highlighter-rouge">_config.yml</code> (see
+<a href="#configuration">Configuration</a> below).</p>
+
+<p>It is recommended to organize (non-overlapping) sets of related
+documents into collections. To get the most out of your Jekyll
+collections, please refer also to the Liquid language documentation at
+<a href="http://wiki.shopify.com/Liquid">http://wiki.shopify.com/Liquid</a>.</p>
+
+<h3 id="linking-to-collection-entries">Linking to collection entries</h3>
+
+<p>It is often necessary to cross-reference parts of documentation from
+others. To make creating such links easier, Annodoc provides support
+for linking to collection entries.</p>
+
+<p>The syntax for creating such links is simple: just wrap the name of
+any collection entry as in <code class="language-plaintext highlighter-rouge">[NAME]()</code>. For example, to create a link
+to the documentation for the PERSON type, use</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[PERSON]()
+</code></pre></div></div>
+
+<p>which gives the following link</p>
+
+<p><a href="">PERSON</a></p>
+
+<p>Alternatively, you can use empty HTML anchor tags (<code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;/a&gt;</code>),
+as in</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a&gt;PERSON&lt;/a&gt;
+</code></pre></div></div>
+
+<p>(These two alternative forms result in identical links.)</p>
+
+<p>For cases where the same label (name) occurs in several collections,
+it is possible to disambiguate the target by including the collection
+name in the format <code class="language-plaintext highlighter-rouge">COLLECTION/ENTRY</code>, for example</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[entity/PERSON]()
+</code></pre></div></div>
+
+<p>(or, equivalently, <code class="language-plaintext highlighter-rouge">&lt;a&gt;entity/PERSON&lt;/a&gt;</code>) which produces</p>
+
+<p><a href="">entity/PERSON</a></p>
+
+<p>(Note that the text of the generated link only includes the entry
+label.)</p>
+
+<p>Either of these forms can be used in running text, for example</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[FAMILY]() relation arguments have type [PERSON]().
+</code></pre></div></div>
+
+<p>gives</p>
+
+<p><a href="">FAMILY</a> relation arguments have type <a href="">PERSON</a>.</p>
+
+<p>Cases where linking failed are visually marked to identify the
+issue:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[no-such-type]()
+</code></pre></div></div>
+
+<p>is shown as</p>
+
+<p><a href="">no-such-type</a></p>
+
+<p>For all of the forms listed above, the text of the link matches the
+linked type. To get a different text, use the syntax
+<code class="language-plaintext highlighter-rouge">[text](TYPE)</code>. For example,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[people](PERSON)
+</code></pre></div></div>
+
+<p>and</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[people](entity/PERSON)
+</code></pre></div></div>
+
+<p>both generate the same link: <a href="PERSON">people</a> and <a href="entity/PERSON">people</a></p>
+
+<p>This form can also be written in HTML as</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="PERSON"&gt;people&lt;/a&gt;
+</code></pre></div></div>
+
+<p>Which again gives an identical link: <a href="PERSON">people</a></p>
+
+<p>Note that this automatic processing only applies to <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> elements
+that have no <code class="language-plaintext highlighter-rouge">href</code>, <code class="language-plaintext highlighter-rouge">id</code>, or <code class="language-plaintext highlighter-rouge">name</code> attributes or whose <code class="language-plaintext highlighter-rouge">href</code>
+attribute matches a simple pattern (e.g. lacking <code class="language-plaintext highlighter-rouge">http://</code> and
+<code class="language-plaintext highlighter-rouge">.html</code>). This means that standard HTML anchors and links can be used
+normally in Annodoc documents without triggering this feature.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Different aspects of the way a set of documentation is presented are
+controlled by various configuration files and settings. The following
+are the most important.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_config.yml</code></li>
+</ul>
+
+<p>The Jekyll top-level configuration file <code class="language-plaintext highlighter-rouge">_config.yml</code> controls many
+aspects of the conversion of the source documents into the final site
+as well as how Jekyll serves the site. This file also configures the
+<a href="#collections">collections</a> that are defined for the documentation.
+Full documentation for <code class="language-plaintext highlighter-rouge">_config.yml</code> is available from
+<a href="http://jekyllrb.com/docs/configuration/">http://jekyllrb.com/docs/configuration/</a>.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_includes/header.html</code>, <code class="language-plaintext highlighter-rouge">_includes/footer.html</code></li>
+</ul>
+
+<p>These HTML files are automatically attached to every page on the site.
+Edit the HTML content of these two files to customize the look of the
+documentation, add navigation, etc. These files are standard HTML.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">css/main.css</code>, <code class="language-plaintext highlighter-rouge">css/style-vis.css</code></li>
+</ul>
+
+<p>The <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> files found in the <code class="language-plaintext highlighter-rouge">css</code> subdirectory control the style
+(look) of the main documentation (<code class="language-plaintext highlighter-rouge">main.css</code>) and the visualizations
+(<code class="language-plaintext highlighter-rouge">style-vis.css</code>). It is not necessary to modify these in basic
+usage. If changes to the style of the documentation pages or the
+visualization are needed, please refer to e.g.
+<a href="http://www.w3.org/Style/CSS/Overview.en.html">http://www.w3.org/Style/CSS/Overview.en.html</a> for more information.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">lib/local/config.js</code></li>
+</ul>
+
+<p>This JavaScript file holds the configuration for the <a href="http://brat.nlplab.org">brat</a>
+visualization component. The configuration specifies, for example, the
+colors, labels, label abbreviations, and line styles to use for
+visualizing various categories of annotation. For documentation on the
+contents and syntax of this file, refer to
+<a href="http://brat.nlplab.org/configuration.html">http://brat.nlplab.org/configuration.html</a>.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>The following sections provide instructions for troubleshooting
+various possible issues with the system.</p>
+
+<h3 id="troubleshooting-basic-visualization">Troubleshooting: basic visualization</h3>
+
+<p>Are the annotation visualizations working? To check, see if the following
+visualization and image look (broadly) similar.</p>
+
+<p>Visualization:</p>
+
+<pre><code class="language-ann">Barack Obama is the current president.
+T1 PERSON 0 12 Barack Obama
+</code></pre>
+
+<p>Image:</p>
+
+<p><img src="static/img/visualization-example.png" /></p>
+
+<p>If yes, the basic visualization support is OK. If no (e.g.  if instead
+of a visualization text such as <code class="language-plaintext highlighter-rouge">T1 PERSON 0 12 Barack Obama</code> is
+shown), then try the following:</p>
+
+<ul>
+  <li>
+    <p>Make sure you are using a supported browser. The visualizations
+require <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a> support.  We recommend recent versions of Chrome or
+Safari. For IE, version 9 or newer is required.</p>
+  </li>
+  <li>
+    <p>Check that JavaScript is enabled. The system requires JavaScript to
+generate the visualizations and will fail without it.</p>
+  </li>
+  <li>
+    <p>Check the JavaScript console for errors. (The console is accessed in
+different ways depending on your browser.)</p>
+  </li>
+  <li>
+    <p>Check that coderay is not running on the server. If active, coderay
+may pre-empt embedded visualization processing by replacing the
+annotation blocks. The <code class="language-plaintext highlighter-rouge">_config.yml</code> option <code class="language-plaintext highlighter-rouge">kramdown:
+enable_coderay: false</code> should disable coderay.</p>
+  </li>
+  <li>
+    <p>Report the issue to the developers: email <code class="language-plaintext highlighter-rouge">sampo.pyysalo@gmail.com</code></p>
+  </li>
+</ul>
+
+<h3 id="troubleshooting-local-usage">Troubleshooting: local usage</h3>
+
+<p>If you are having trouble running the system locally, please check
+the following:</p>
+
+<ul>
+  <li>Check that you have a recent version of Jekyll by running <code class="language-plaintext highlighter-rouge">jekyll -v</code>.
+Version 2.0 or greater is recommended.</li>
+</ul>
+
+<p>Some debian-based linux distributions are currently shipping a dated
+version of Jekyll. If you are using such a system, you may wish to
+consider using <code class="language-plaintext highlighter-rouge">gem</code> instead of <code class="language-plaintext highlighter-rouge">apt-get</code> to install Jekyll (see e.g.
+<a href="http://jekyllrb.com/docs/installation/#install-with-rubygems">http://jekyllrb.com/docs/installation/#install-with-rubygems</a>).</p>
+
+<h3 id="troubleshooting-editing-online">Troubleshooting: editing online</h3>
+
+<p>If the “edit page” links do not appear on Annodoc documentation pages,
+please make sure <code class="language-plaintext highlighter-rouge">editurl</code> site variable is set in <code class="language-plaintext highlighter-rouge">_config.yml</code> (see
+<a href="#configuration">Configuration</a>).</p>
+
+<p>If the “edit page” link appears but does not lead to a GitHub
+online editing page, please check the following:</p>
+
+<ul>
+  <li>
+    <p>GitHub online editing is working as intended. Click on any document
+in your GitHub repository and click on the pen icon to test this
+feature.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">editurl</code> is correctly set. Try comparing the generated “edit page”
+links with the URL used for the GitHub online editing page.</p>
+  </li>
+  <li>
+    <p>You are allowed to edit the repository (owner or collaborator) and
+you are logged in to GitHub.</p>
+  </li>
+</ul>
+
+<hr />
+
+:ET
