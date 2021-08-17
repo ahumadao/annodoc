@@ -1,0 +1,20 @@
+I"Õ<p>The <code class="language-plaintext highlighter-rouge">FAMILY</code> relation is annotated between two <code class="language-plaintext highlighter-rouge">PERSON</code> entities that
+are stated to stand in any familial relationship.</p>
+
+<!-- details -->
+
+<p>Example:</p>
+
+<pre><code class="language-ann">Michelle Obama is the wife of Barack Obama.
+T1 PERSON 0 14 Michelle Obama
+T2 PERSON 30 42 Barack Obama
+R1 FAMILY Arg1:T1 Arg2:T2
+</code></pre>
+
+<hr />
+
+<p>(This is an example entry in the <code class="language-plaintext highlighter-rouge">relation</code> collection. You can find
+the source of this document in the <code class="language-plaintext highlighter-rouge">_relation/</code> directory, file
+<code class="language-plaintext highlighter-rouge">family.md</code>. To add new entries like this, simply add new <code class="language-plaintext highlighter-rouge">.md</code> files
+into the <code class="language-plaintext highlighter-rouge">_family/</code> directory.)</p>
+:ET

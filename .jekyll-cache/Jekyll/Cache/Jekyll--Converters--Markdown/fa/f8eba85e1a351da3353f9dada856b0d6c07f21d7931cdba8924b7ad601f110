@@ -1,0 +1,18 @@
+I"5<p>References to single individual humans as well as groups of humans are
+annotated as <code class="language-plaintext highlighter-rouge">PERSON</code>.</p>
+
+<!-- details -->
+
+<p>Example:</p>
+
+<pre><code class="language-ann">Barack Obama is president.
+T1 PERSON 0 12 Barack Obama
+</code></pre>
+
+<hr />
+
+<p>(This is an example entry in the <code class="language-plaintext highlighter-rouge">entity</code> collection. You can find the
+source of this document in the <code class="language-plaintext highlighter-rouge">_entity/</code> directory, file <code class="language-plaintext highlighter-rouge">person.md</code>.
+To add new entries like this, simply add new <code class="language-plaintext highlighter-rouge">.md</code> files into the
+<code class="language-plaintext highlighter-rouge">_entity/</code> directory.)</p>
+:ET

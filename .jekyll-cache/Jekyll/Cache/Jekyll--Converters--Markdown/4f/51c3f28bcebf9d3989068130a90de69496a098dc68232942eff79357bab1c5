@@ -1,0 +1,128 @@
+I"j<h1 id="sandbox">Sandbox</h1>
+
+<p>This file is intended as a “sandbox” for trying out the editing
+features. Feel free to make changes by clicking the “edit page” link
+at the top. (You need to be logged in to GitHub and have write
+permissions to this GitHub repository for this to work.)</p>
+
+<hr />
+
+<h1 id="some-markdown">Some markdown</h1>
+
+<ul>
+  <li>bulleted</li>
+  <li>list</li>
+</ul>
+
+<ol>
+  <li>numbered</li>
+  <li>list</li>
+</ol>
+
+<p>Link: <a href="http://www.example.com">link text</a></p>
+
+<h1 id="header-1">header 1</h1>
+
+<h2 id="header-2">header 2</h2>
+
+<h3 id="header-3">header 3</h3>
+
+<p><em>italics</em> and <strong>bold</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">inline code</code></p>
+
+<hr />
+
+<h1 id="some-visualizations">Some visualizations</h1>
+
+<pre><code class="language-sdparse">Just some tokens
+</code></pre>
+
+<pre><code class="language-sdparse">Tokens/Noun with/Adpos POS/Noun
+</code></pre>
+
+<pre><code class="language-sdparse">A dependency
+det(dependency, A)
+</code></pre>
+
+<div class="sd-parse">
+Alternative syntax
+</div>
+
+<div class="sd-parse" tabs="yes">
+Dynamic visualization (click "edit!")
+</div>
+
+<div class="conllx-parse" tabs="yes">
+1   CoNLL-X   CoNLL-X   NNP   _    _    2    NMOD    _    _
+2   example   example   NN    _    _    0    ROOT    _    _
+</div>
+
+<div class="conllu-parse" tabs="yes">
+1   CoNLL-U   CoNLL-U   NNP   _    _    2    nmod    _    _
+2   example   example   NN    _    _    0    root    _    _
+</div>
+
+<div class="conllu-parse" tabs="yes">
+# sentence-label S1
+1   CoNLL-U   CoNLL-U   NNP   _    _    2    nmod    _    _
+2   example   example   NN    _    _    0    root    _    _
+</div>
+
+<div class="ann-annotation" tabs="yes">
+.ann annotation example
+</div>
+
+<pre><code class="language-sdparse">Parse with errors
+det(no-such, token)
+</code></pre>
+
+<p>Right-to-left text (Hebrew, SD format)</p>
+
+<pre><code class="language-sdparse">דני/NOUN ראה/VERB סרט/NOUN
+nsubj(ראה, דני)
+dobj(ראה, סרט)
+</code></pre>
+
+<p>Same sentence in CoNLL-U:</p>
+
+<pre><code class="language-conllu">1     דני       _        NOUN    _      _     2      nsubj _ _
+2     ראה       _        VERB    _      _     0      root  _ _
+3     סרט       _        NOUN    _      _     2      dobj  _ _
+</code></pre>
+
+<p>Arabic (CoNLL-U):</p>
+
+<pre><code class="language-conllu">1     وَ       _        NOUN    _      _     2      nsubj _ _
+2     لاحَظَ       _        VERB    _      _     0      root  _ _
+3     التَقْرِيرُ       _        NOUN    _      _     2      dobj  _ _
+</code></pre>
+
+<hr />
+
+<p>Empty node</p>
+
+<div class="conllu-parse" tabs="yes">
+# text = Sue likes coffee and Bill tea
+1       Sue     Sue     PROPN   _       _       2       nsubj   2:nsubj _
+2       likes   like    VERB    _       _       0       root    0:root  _
+3       coffee  coffee  NOUN    _       _       2       obj     2:obj   _
+4       and     and     CCONJ   _       _       5       cc      5:cc    _
+5       Bill    a       PROPN   _       _       2       conj    5.1:nsubj       _
+5.1     likes   like    VERB    _       _       _       _       2:conj  _
+6       tea     tea     NOUN    _       _       5       orphan  5.1:obj _
+</div>
+
+<hr />
+
+<p>Space in FORM and LEMMA</p>
+
+<div class="conllu-parse" tabs="yes">
+1	Sue	Sue	PROPN	_	_	2	nsubj	_	_
+2	L I K E S	l i k e	VERB	_	_	0	root	_	_
+3	coffee	coffee	NOUN	_	_	2	obj	_	_
+
+</div>
+
+<hr />
+:ET

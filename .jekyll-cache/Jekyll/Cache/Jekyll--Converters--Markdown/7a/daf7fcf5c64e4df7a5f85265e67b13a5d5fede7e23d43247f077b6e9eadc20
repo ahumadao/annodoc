@@ -1,0 +1,19 @@
+I"f<p>References to human groups that have been established for a specific
+purpose are annotated as <code class="language-plaintext highlighter-rouge">ORGANIZATION</code>.</p>
+
+<!-- details -->
+
+<p>Example:</p>
+
+<pre><code class="language-ann">Google acquired YouTube.
+T1 ORGANIZATION 0 6 Google
+T2 ORGANIZATION 16 23 YouTube
+</code></pre>
+
+<hr />
+
+<p>(This is an example entry in the <code class="language-plaintext highlighter-rouge">entity</code> collection. You can find the
+source of this document in the <code class="language-plaintext highlighter-rouge">_entity/</code> directory, file
+<code class="language-plaintext highlighter-rouge">organization.md</code>. To add new entries like this, simply add new <code class="language-plaintext highlighter-rouge">.md</code>
+files into the <code class="language-plaintext highlighter-rouge">_entity/</code> directory.)</p>
+:ET
