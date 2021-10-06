@@ -1,0 +1,146 @@
+I"�<p>En esta página se describirán las reglas generales para el proceso de anotación de metástasis a distancia (M)</p>
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<ul>
+  <li><a href="#todas-las-menciones-en-la-misma-frase">Todas las menciones en la misma frase</a></li>
+  <li><a href="#abreviaturas-y-siglas">Abreviaturas y siglas</a></li>
+  <li><a href="#anotar-antecedentes-familiares-o-personales">Anotar antecedentes familiares o personales</a></li>
+  <li><a href="#anotar-la-conclusión-del-examen">Anotar la conclusión del examen</a></li>
+  <li><a href="#anotar-de-manera-dependiente-al-diagnostico">Anotar de manera dependiente al diagnóstico</a></li>
+  <li><a href="#anotar-menciones-negadas">Anotar menciones negadas</a></li>
+  <li><a href="#anotar-menciones-inciertas">Anotar menciones inciertas</a></li>
+</ul>
+
+<h2 id="todas-las-menciones-en-la-misma-frase">Todas las menciones en la misma frase</h2>
+
+<p>Se deberá anotar de manera separada, todas las menciones o sinónimos distintos utilizados para referirse a una metástasis a distancia en una misma frase:</p>
+
+<p>Ejemplo:</p>
+
+<pre><code class="language-ann">Cambios postquirúrgicos de histerectomía total y doble anexectomía, no se reconocen masas ni focos hipermetabólicos en lecho quirúrgico.
+T1 M0 84 89 masas
+T2 M0 94 115 focos hipermetabólicos
+A1 menciónincierta[-] T1
+A2 menciónincierta[-] T2
+</code></pre>
+
+<h2 id="abreviaturas-y-siglas">Abreviaturas y siglas</h2>
+
+<p>Una mención puede ser una abreviatura o una sigla de un hallazgo de metástasis a distancia.</p>
+
+<h2 id="anotar-antecedentes-familiares-o-personales">Anotar antecedentes familiares o personales</h2>
+
+<p>Se debe anotar las menciones incluso cuando no se refieren directamente al paciente del reporte o examen, o al momento actual, por ejemplo, menciones de metástasis enumeradas en historia clínica o antecedentes familiares.</p>
+
+<h2 id="anotar-la-conclusión-del-examen">Anotar la conclusión del examen</h2>
+
+<p>Todas las menciones de metástasis deben ser anotadas, incluso las que estén presentes en la conclusión del examen que se está revisando.</p>
+
+<p>Ejemplo:</p>
+<pre><code class="language-ann">Estudio PET/CT con F18-PSMA sin evidencia de recurrencia locorregional ni a distancia de cáncer de próstata tratado.
+T1 M0 45 85 masas
+A1 menciónincierta[-] T1
+</code></pre>
+
+<h2 id="anotar-de-manera-dependiente-al-diagnóstico">Anotar de manera dependiente al diagnóstico</h2>
+
+<p>La mención M1 o M0 de metástasis a distancia dependerá del tipo de cáncer diagnosticado. Por lo tanto, para catalogar una mención se deberá tener en cuenta la clasificación TNM de tumores malignos mencionada anteriormente y la parte del cuerpo involucrada.</p>
+
+<h2 id="anotar-menciones-negadas">Anotar menciones negadas</h2>
+
+<p>Anotar, incluso si la mención está en una expresión negada, por ejemplo, en el caso de que se mencione un sinónimo de metástasis para dejar claro que no hay metástasis a distancia.</p>
+
+<p>Ejemplo:</p>
+
+<pre><code class="language-ann">No se reconocen focos hipermetabólicos en esqueleto visible. 
+T1 Negación 0 16 No se reconocen
+T2 M0 16 38 focos hipermetabólicos
+A1 menciónincierta[-] T2
+
+</code></pre>
+
+<h2 id="anotar-menciones-inciertas">Anotar menciones inciertas</h2>
+
+<p>Cada instancia de documento debe ser anotada por un único anotador.</p>
+
+<h2 id="anotación-basada-en-documentos-individuales">Anotación basada en documentos individuales</h2>
+
+<p>Todas las anotaciones de una instancia de documento deben realizarse de manera aislada sin tener en cuenta otros casos clínicos.</p>
+
+<h2 id="menciones-ambiguas">Menciones ambiguas</h2>
+
+<p>No anotar menciones para las que no esté claro si corresponde anotarlas (incluso tras consultar algún recurso externo).</p>
+
+<p>En caso de que esto suceda, consultar en el siguiente <a href="https://forms.gle/b2AfGJ97toecB5hb9">Formulario de Google</a>, ingresando la información solicitada.</p>
+
+<h2 id="revisión-de-las-reglas-de-anotación">Revisión de las reglas de anotación</h2>
+
+<p>Si se detectan casos especiales de tipos de menciones que podrían ser de interés o estar relacionadas y las guías no especifican su anotación, se deben reportar estos casos junto con ejemplos para refinar las reglas de anotación y una explicación mínima para que cualquier anotador pueda entender el razonamiento en un caso concreto.</p>
+
+<p>En caso de que esto suceda, ingresar al <a href="https://forms.gle/b2AfGJ97toecB5hb9">Formulario de Google</a> para ingresar la revisión.</p>
+
+<h2 id="exhaustividad-de-las-menciones">Exhaustividad de las menciones</h2>
+
+<p>Las menciones de metástasis afirmativas o negadas deben anotarse cada vez que aparezcan. Una entidad negativa, por ejemplo, que se menciona múltiples veces, debe anotarse múltiples veces.</p>
+
+<p>En el caso del examen PET-CT suele mencionarse en múltiples oportunidades el descarte de lesiones malignas, todas las menciones deben ser etiquetadas.</p>
+
+<h2 id="límite-de-menciones">Límite de menciones</h2>
+
+<p>La mención debe incluir el hallazgo de metástasis a distancia o su descarte y se podrá incluir dentro de la anotación, información no relevante con el objetivo de no romper la cadena siempre y cuando la distancia entre las partes relevantes de la mención sea igual o menor a 5 tokens.</p>
+
+<p>En caso de que la distancia sea mayor a 5 tokens, las palabras relevantes de la mención deberán considerarse menciones individuales.</p>
+
+<p>Ejemplos:</p>
+
+<p>En el primer ejemplo se observa una mención entre las palabras clave <em>masa</em> e <em>hipermetabólica</em>. La distancia entre estas palabras es de 5 tokens, por lo que es factible anotar como una mención única.</p>
+
+<pre><code class="language-ann">Se observa masa en músculo esquelético conservado, hipermetabólica.
+T1 M1 11 66 masa, en músculo esquelético conservado, de características hipermetabólicas
+A1 menciónincierta[-] T1
+</code></pre>
+<p>En cambio, en este ejemplo similar al anterior, la distancia entre las mismas palabras es de 7 tokens, por lo que se anotan separadas en 2 menciones distintas.</p>
+<pre><code class="language-ann">Se observa masa, en músculo esquelético conservado, de características hipermetabólicas
+T1 M1 11 15 masa
+T2 M1 71 87 hipermetabólicas
+A1 menciónincierta[-] T1
+A2 menciónincierta[-] T2
+</code></pre>
+
+<p>Otro ejemplo de un hallazgo dividido en dos menciones distintas:</p>
+
+<pre><code class="language-ann">No se identifican adenopatías axilares, supraclaviculares, hiliomediastínicas ni mamarias internas hipercaptantes.
+T1 M0 18 29 adenopatías
+T2 M0 99 113 hipercaptantes
+A1 menciónincierta[-] T1
+A2 menciónincierta[-] T2
+</code></pre>
+
+<h2 id="límite-de-sentencias">Límite de sentencias</h2>
+
+<p>Las menciones de entidades de metástasis a distancia no pueden atravesar oraciones múltiples. Es decir, una mención no puede atravesar:</p>
+
+<ul>
+  <li>Un punto y seguido</li>
+  <li>Un punto y aparte</li>
+  <li>Un bullet-point</li>
+</ul>
+
+<p>Esta regla, en algunos casos produce que no se anote información relevante. No obstante, su aplicación simplifica y acelera la anotación y facilita el tratamiento computacional posterior.</p>
+
+<h2 id="perfil-del-anotador">Perfil del anotador</h2>
+
+<p>Para la correcta aplicación de esta guía en una tarea de anotación, sería deseable que el anotador dispusiera de las siguientes capacidades:</p>
+
+<ul>
+  <li>Conocimiento de la clasificación TNM de tumores malignos.</li>
+  <li>Conocimiento de las bases biológicas del comportamiento del tumor o biología del cáncer y específicamente de la metástasis.</li>
+  <li>Conocimiento en anatomía humana.</li>
+  <li>Conocimiento de los términos, abreviaturas y siglas médicas.</li>
+  <li>Habilidades en la búsqueda de información científica.</li>
+</ul>
+
+<hr />
+
+:ET

@@ -1,0 +1,75 @@
+I"\<p>En esta página se describirán las reglas positivas para el proceso de anotación de metástasis a distancia (M), es decir, aquello que efectivamente debe ser etiquetado por los anotadores.</p>
+
+<h2 id="contenido">Contenido</h2>
+
+<ul>
+  <li><a href="#todas-las-menciones-en-la-misma-frase">Todas las menciones en la misma frase</a></li>
+  <li><a href="#abreviaturas-y-siglas">Abreviaturas y siglas</a></li>
+  <li><a href="#anotar-antecedentes-familiares-o-personales">Anotar antecedentes familiares o personales</a></li>
+  <li><a href="#anotar-la-conclusión-del-examen">Anotar la conclusión del examen</a></li>
+  <li><a href="#anotar-de-manera-dependiente-al-diagnostico">Anotar de manera dependiente al diagnóstico</a></li>
+  <li><a href="#anotar-menciones-negadas">Anotar menciones negadas</a></li>
+  <li><a href="#anotar-menciones-inciertas">Anotar menciones inciertas</a></li>
+</ul>
+
+<h2 id="todas-las-menciones-en-la-misma-frase">Todas las menciones en la misma frase</h2>
+
+<p>Se deberá anotar de manera separada, todas las menciones o sinónimos distintos utilizados para referirse a una metástasis a distancia en una misma frase:</p>
+
+<p>Ejemplo:</p>
+
+<pre><code class="language-ann">Cambios postquirúrgicos de histerectomía total y doble anexectomía, no se reconocen masas ni focos hipermetabólicos en lecho quirúrgico.
+T1 M0 84 89 masas
+T2 M0 94 115 focos hipermetabólicos
+A1 menciónincierta[-] T1
+A2 menciónincierta[-] T2
+</code></pre>
+
+<h2 id="abreviaturas-y-siglas">Abreviaturas y siglas</h2>
+
+<p>Una mención puede ser una abreviatura o una sigla de un hallazgo de metástasis a distancia.</p>
+
+<h2 id="anotar-antecedentes-familiares-o-personales">Anotar antecedentes familiares o personales</h2>
+
+<p>Se debe anotar las menciones incluso cuando no se refieren directamente al paciente del reporte o examen, o al momento actual, por ejemplo, menciones de metástasis enumeradas en historia clínica o antecedentes familiares.</p>
+
+<h2 id="anotar-la-conclusión-del-examen">Anotar la conclusión del examen</h2>
+
+<p>Todas las menciones de metástasis deben ser anotadas, incluso las que estén presentes en la conclusión del examen que se está revisando.</p>
+
+<p>Ejemplo:</p>
+<pre><code class="language-ann">Estudio PET/CT con F18-PSMA sin evidencia de recurrencia locorregional ni a distancia de cáncer de próstata tratado.
+T1 M0 45 85 masas
+A1 menciónincierta[-] T1
+</code></pre>
+
+<h2 id="anotar-de-manera-dependiente-al-diagnóstico">Anotar de manera dependiente al diagnóstico</h2>
+
+<p>La mención M1 o M0 de metástasis a distancia dependerá del tipo de cáncer diagnosticado. Por lo tanto, para catalogar una mención se deberá tener en cuenta la clasificación TNM de tumores malignos mencionada anteriormente y la parte del cuerpo involucrada.</p>
+
+<h2 id="anotar-menciones-negadas">Anotar menciones negadas</h2>
+
+<p>Anotar, incluso si la mención está en una expresión negada, por ejemplo, en el caso de que se mencione un sinónimo de metástasis para dejar claro que no hay metástasis a distancia.</p>
+
+<p>Ejemplo:</p>
+
+<pre><code class="language-ann">No se reconocen focos hipermetabólicos en esqueleto visible. 
+T1 Negación 0 16 No se reconocen
+T2 M0 16 38 focos hipermetabólicos
+A1 menciónincierta[-] T2
+
+</code></pre>
+<h2 id="anotar-menciones-inciertas">Anotar menciones inciertas</h2>
+
+<p>En casos en que el médico, <em>explícitamente</em>, declare una duda o incertidumbre y no pueda determinar el carácter metastásico de la lesión encontrada, se deberá asignar el atributo de Mención incierta positiva[+], en caso contrario, mantener negativo [-]</p>
+
+<p>Ejemplo:</p>
+
+<p>~~~ ann
+Se observan 2 focos con discreto hipermetabolismo, de carácter indeterminado.
+T1 M1 60 75 focos con discreto hipermetabolismo
+T2 Incertidumbre 54 76 carácter indeterminado
+A1 menciónincierta[+] T1
+——————————————————————————</p>
+
+:ET

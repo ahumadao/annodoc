@@ -1,0 +1,30 @@
+I"�<p>En esta página se describirán las reglas positivas para el proceso de anotación de metástasis a distancia (M), es decir, aquello que efectivamente debe ser etiquetado por los anotadores.</p>
+
+<h2 id="contenido">Contenido</h2>
+
+<ul>
+  <li><a href="#Otros-idiomas">Otros idiomas</a></li>
+  <li><a href="#errores-tipográficos">Errores tipográficos</a></li>
+  <li><a href="#espacios-erróneos">Espacios erróneos</a></li>
+  <li><a href="#no-etiquetar-los-espacios-flanqueantes-en-blanco-o-puntuación-innecesaria">No etiquetar los espacios flanqueantes en blanco o puntuación innecesaria</a></li>
+</ul>
+
+<h2 id="otros-idiomas">Otros idiomas</h2>
+
+<p>Las menciones en otros idiomas diferentes del castellano deben ser anotados, independientemente del lenguaje.</p>
+
+<h2 id="errores-tipográficos">Errores tipográficos</h2>
+
+<p>Aquellas menciones de metástasis a distancia (que sigan las reglas generales de anotación) y que tengan errores tipográficos, deben ser anotadas.</p>
+
+<h2 id="espacios-erróneos">Espacios erróneos</h2>
+
+<p>Las palabras separadas en diversos tokens de texto por espacios erróneos deberán ser anotadas como una única entidad</p>
+
+<h2 id="no-etiquetar-los-espacios-flanqueantes-en-blanco-o-puntuación-innecesaria">No etiquetar los espacios flanqueantes en blanco o puntuación innecesaria</h2>
+
+<p>No etiquetar los espacios en blanco, puntos, comas, guiones, etc. que flanquean una mención de metástasis a distancia. Los anotadores deberían intentar definir las menciones de la manera más precisa, evitando caracteres innecesarios. No anotar por ejemplo, puntos, comas y espacios al principio y fin de cada frase.</p>
+
+<hr />
+
+:ET

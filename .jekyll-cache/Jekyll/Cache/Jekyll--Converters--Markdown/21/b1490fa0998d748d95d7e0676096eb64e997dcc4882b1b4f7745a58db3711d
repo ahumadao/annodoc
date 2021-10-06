@@ -1,0 +1,44 @@
+I"]	<p>En esta página se describirán las reglas positivas para el proceso de anotación de metástasis a distancia (M), es decir, aquello que efectivamente debe ser etiquetado por los anotadores.</p>
+
+<h2 id="contenido">Contenido</h2>
+
+<ul>
+  <li><a href="#lesiones-no-metastásicas">Lesiones no metastásicas</a></li>
+  <li><a href="#sitios-anatómicos">Sitios anatómicos</a></li>
+  <li><a href="#menciones-implícitas-de-entidades">Menciones implícitas de entidades</a></li>
+</ul>
+
+<h2 id="lesiones-no-metastásicas">Lesiones no metastásicas</h2>
+
+<p>No anotar textos relacionados a otro tipo de lesiones de carácter no metastásico, como la descripción del tumor primario en el documento u otro tipo de lesiones, por ejemplo, inflamatorias, benignas, de conservación de estructuras anatómicas, etc.</p>
+
+<p>Ejemplo:</p>
+
+<pre><code class="language-ann">Cambios postquirúrgicos de histerectomía total y doble anexectomía, no se reconocen masas ni focos hipermetabólicos en lecho quirúrgico.
+T1 M0 84 89 masas
+T2 M0 94 115 focos hipermetabólicos
+A1 menciónincierta[-] T1
+A2 menciónincierta[-] T2
+</code></pre>
+
+<h2 id="sitios-anatómicos">Sitios anatómicos</h2>
+
+<p>No serán anotados los sitios anatómicos para este proyecto, solo la mención de metástasis a distancia. La excepción a esta regla corresponde a sitios anatómicos que estén presentes al interior de una frase que indique un hallazgo de metástasis a distancia (ver regla general de <a href="http://127.0.0.1:4000/annodoc/reglas_generales#l%C3%ADmite-de-menciones">Límite de menciones</a> como ejemplo).</p>
+
+<h2 id="anotar-antecedentes-familiares-o-personales">Anotar antecedentes familiares o personales</h2>
+
+<p>Se debe anotar las menciones incluso cuando no se refieren directamente al paciente del reporte o examen, o al momento actual, por ejemplo, menciones de metástasis enumeradas en historia clínica o antecedentes familiares.</p>
+
+<h2 id="menciones-implícitas-de-entidades">Menciones implícitas de entidades</h2>
+
+<p>Todas las menciones de metástasis deben ser anotadas, incluso las que estén presentes en la conclusión del examen que se está revisando.</p>
+
+<p>Ejemplo:</p>
+<pre><code class="language-ann">Estudio PET/CT con F18-PSMA sin evidencia de recurrencia locorregional ni a distancia de cáncer de próstata tratado.
+T1 M0 45 85 masas
+A1 menciónincierta[-] T1
+</code></pre>
+
+<hr />
+
+:ET

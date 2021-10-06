@@ -1,0 +1,47 @@
+I"
+<p>En esta página se describirán las reglas positivas para el proceso de anotación de metástasis a distancia (M), es decir, aquello que efectivamente debe ser etiquetado por los anotadores.</p>
+
+<h2 id="contenido">Contenido</h2>
+
+<ul>
+  <li><a href="#lesiones-no-metastásicas">Lesiones no metastásicas</a></li>
+  <li><a href="#sitios-anatómicos">Sitios anatómicos</a></li>
+  <li><a href="#menciones-implícitas-de-entidades">Menciones implícitas de entidades</a></li>
+</ul>
+
+<h2 id="lesiones-no-metastásicas">Lesiones no metastásicas</h2>
+
+<p>No anotar textos relacionados a otro tipo de lesiones de carácter no metastásico, como la descripción del tumor primario en el documento u otro tipo de lesiones, por ejemplo, inflamatorias, benignas, de conservación de estructuras anatómicas, etc.</p>
+
+<p>Ejemplo:</p>
+
+<pre><code class="language-ann">Cambios postquirúrgicos de histerectomía total y doble anexectomía, no se reconocen masas ni focos hipermetabólicos en lecho quirúrgico.
+T1 M0 84 89 masas
+T2 M0 94 115 focos hipermetabólicos
+A1 menciónincierta[-] T1
+A2 menciónincierta[-] T2
+</code></pre>
+
+<h2 id="sitios-anatómicos">Sitios anatómicos</h2>
+
+<p>No serán anotados los sitios anatómicos para este proyecto, solo la mención de metástasis a distancia. La excepción a esta regla corresponde a sitios anatómicos que estén presentes al interior de una frase que indique un hallazgo de metástasis a distancia (ver regla general de <a href="http://127.0.0.1:4000/annodoc/reglas_generales#l%C3%ADmite-de-menciones">Límite de menciones</a> como ejemplo).</p>
+
+<p>Ejemplo:</p>
+<pre><code class="language-ann">Se observa un extenso compromiso hipermetabólico medular
+T1 M1 22 48 
+A1 menciónincierta[-] T1
+</code></pre>
+<pre><code class="language-ann">Se observa un extenso compromiso medular hipermetabólico
+T1 M1 22 56 
+A1 menciónincierta[-] T1
+</code></pre>
+
+<p>En el primer ejemplo, no se etiqueta la palabra <em>medular</em>. En el segundo ejemplo se etiqueta, como excepción, porque está al interior de dos palabras clave -<em>compromiso</em> e <em>hipermetabólico</em>- que hacen referencia a una mención de M1, según regla de <a href="http://127.0.0.1:4000/annodoc/reglas_generales#l%C3%ADmite-de-menciones">Límite de menciones</a>.</p>
+
+<h2 id="menciones-implícitas-de-entidades">Menciones implícitas de entidades</h2>
+
+<p>No se debe realizar ningún tipo de inferencia clínica para decidir si una evidencia textual representa indirectamente una entidad clínica. Asimismo, las anáforas no deben anotarse.</p>
+
+<hr />
+
+:ET
