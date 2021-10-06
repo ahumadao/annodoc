@@ -1,0 +1,62 @@
+I"�<p>En esta página se describirán las reglas generales para el proceso de anotación de metástasis a distancia (M)</p>
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<ul>
+  <li><a href="#mención-mínima">Mención mínima</a></li>
+  <li><a href="#uso-de-recursos-de-conocimiento-externos">Uso de recursos de conocimiento externos</a></li>
+  <li><a href="#unicidad-del-anotador">Unicidad del anotador</a></li>
+  <li><a href="#anotación-basada-en-documentos-individuales">Anotación basada en documentos individuales</a></li>
+  <li><a href="#menciones-ambiguas">Menciones ambiguas</a></li>
+  <li><a href="#revisión-de-las-reglas-de-anotación">Revisión de las reglas de anotación</a></li>
+  <li><a href="#exhaustividad-de-las-menciones">Exhaustividad de las menciones</a></li>
+  <li><a href="#límite-de-menciones">Límite de menciones</a></li>
+  <li><a href="#límite-de-sentencias">Límite de sentencias</a></li>
+  <li><a href="#perfil-del-anotador">Perfil del anotador</a></li>
+</ul>
+
+<h2 id="mención-mínima">Mención Mínima</h2>
+
+<p>Una entidad debe reconocerse como la parte más corta que define un hallazgo o mención de metástasis y que permite aportar ejemplos generalizables para el entrenamiento del algoritmo. Se puede definir también como un <em>sinónimo</em> en el texto correspondiente a un hallazgo  de lesión relacionada a una metástasis a distancia.</p>
+
+<p>Se anotarán como <a href="#mención-mínima">M1-</a> con mención incierta negativa,  <a href="#mención-mínima">M0-</a> según indique presencia o ausencia de Metástasis a Distancia.</p>
+
+<p>En caso de que la mención del hallazgo no sea concluyente, tenga carácter inespecífico, indeterminado o indefinido, se etiquetará como <a href="#mención-mínima">M1+</a></p>
+
+<p>Ejemplos:</p>
+
+<pre><code class="language-ann">Cuello: Los distintos compartimentos cervicales son de amplitud conservada, no se identifica masas ni adenopatías hipermetabólicas”
+T1 M0 93 98 masas
+T2 M0 102 130 adenopatías hipermetabólicas
+A1 menciónincierta[-] T1
+A2 menciónincierta[-] T2
+</code></pre>
+
+<pre><code class="language-ann">Musculoesquelético: El extenso compromiso hipermetabólico[M1] medular y óseo difuso, tanto del esqueleto axial como del esqueleto apendicular, presenta leve disminución en intensidad y extensión. Sin embargo, persisten incontables focos hipermetabólicos[M1] en practicamente todo el esqueleto axial y apendicular visible, con SUV máximo 8,3 a nivel de L5.
+T1 M0 31 57 
+T2 M0 231 253
+A1 menciónincierta[-] T1
+A2 menciónincierta[-] T2
+</code></pre>
+
+<h2 id="uso-de-recursos-de-conocimiento-externos">Uso de recursos de conocimiento externos</h2>
+
+<h2 id="unicidad-del-anotador">Unicidad del anotador</h2>
+
+<h2 id="anotación-basada-en-documentos-individuales">Anotación basada en documentos individuales</h2>
+
+<h2 id="menciones-ambiguas">Menciones ambiguas</h2>
+
+<h2 id="revisión-de-las-reglas-de-anotación">Revisión de las reglas de anotación</h2>
+
+<h2 id="exhaustividad-de-las-menciones">Exhaustividad de las menciones</h2>
+
+<h2 id="límite-de-menciones">Límite de menciones</h2>
+
+<h2 id="límite-de-sentencias">Límite de sentencias</h2>
+
+<h2 id="perfil-del-anotador">Perfil del anotador</h2>
+
+<hr />
+
+:ET

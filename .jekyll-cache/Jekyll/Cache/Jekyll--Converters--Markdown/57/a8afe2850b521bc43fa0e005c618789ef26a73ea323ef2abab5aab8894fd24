@@ -1,0 +1,171 @@
+I"'<p>Este documento que guiará las anotaciones para el proyecto de “Estadificación automática de Metástasis a distancia” realizado en conjunto entre la Facultad de Medicina y la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile y la Fundación Arturo López Pérez.</p>
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<ul>
+  <li><a href="#introducción">Introducción</a></li>
+  <li><a href="#clasificación-tnm-de-tumores-malignos">Clasificación TNM de Tumores Malignos</a></li>
+  <li><a href="#metástasis-a-distancia-en-cáncer-de-próstata">Metástasis a distancia en Cáncer de Próstata</a></li>
+  <li><a href="#metástasis-a-distancia-en-cáncer-colorrectal">Metástasis a distancia en Cáncer Colorrectal</a></li>
+  <li><a href="#metástasis-a-distancia-en-cáncer-de-mama">Metástasis a distancia en Cáncer de Mama</a></li>
+  <li><a href="#entidades-a-anotar">Entidades a Anotar</a></li>
+</ul>
+
+<h2 id="introducción">Introducción</h2>
+
+<p>Esta guía tiene por objetivo describir las especificaciones para la anotación de menciones relacionadas a la presencia o ausencia de metástasis a distancia en reportes de imagenología de la Fundación Arturo López Pérez (FALP).</p>
+
+<p>Los textos de exámenes a anotar serán:</p>
+
+<ul>
+  <li>Tomografía Computarizada</li>
+  <li>Resonancia Magnética Nuclear</li>
+  <li>PET-CT</li>
+</ul>
+
+<p>Correspondientes a pacientes con:</p>
+<ul>
+  <li>Cáncer de Próstata</li>
+  <li>Cáncer Colorrectal</li>
+  <li>Cáncer de Mama</li>
+</ul>
+
+<p>La anotación se realizará en base a la clasificación TNM de tumores malignos en la que se explicita para cada cáncer, las características que determinan la definición de metástasis a distancia.</p>
+
+<h2 id="clasificación-tnm-de-tumores-malignos">Clasificación TNM de Tumores Malignos</h2>
+
+<p>La <a href="https://www.uicc.org/resources/tnm">Clasificación TNM de tumores malignos</a> es el estándar más utilizado para clasificar el estado de avance de un tumor, también llamada estadificación. Es desarrollado y mantenido por la <a href="https://www.uicc.org/who-we-are/about-us">Unión para el Control del Cáncer Internacional</a> y hasta ahora la edición vigente es la 8va.</p>
+
+<p>Esta clasificación permite planificar el tratamiento, entregar una idea del pronóstico del paciente, aportar la evaluación de los tratamientos, facilitar el intercambio de información y contribuir a la investigación y vigilancia epidemiológica en cáncer.</p>
+
+<p>El sistema de clasificación se divide en:</p>
+<ul>
+  <li>T: Tamaño y extensión del tumor principal.</li>
+  <li>N: Presencia o ausencia y extensión del cáncer hacia los ganglios o nódulos linfáticos cercanos.</li>
+  <li>M: Presencia o ausencia de cáncer metastásico a distancia.</li>
+</ul>
+
+<p>Según esta clasificación, la metástasis puede definirse como metástasis a linfonodos regionales (cercanos al tumor primario) o como metástasis a distancia. Ésta última se define como aquella metástasis que invade órganos o linfonodos no regionales. Según está clasificación la presencia de metástasis se denomina M1 y la ausencia de metástasis a distancia como M0. Además, se puede subdividir en M1a, M1b y M1c según el sitio que está infiltrado y que dependerá de cada cáncer.</p>
+
+<p>En el caso de los cánceres mencionados, la estadificación de metástasis a distancia, según el <a href="https://drive.google.com/file/d/1OAgYj1EUuTKrI_W4bsaKYvdbKSXHuSuU/view?usp=sharing">Manual de la Clasificación TNM de Tumores Malignos</a> se describe de la siguiente manera:</p>
+
+<h2 id="metástasis-a-distancia-en-cáncer-de-próstata">Metástasis a distancia en Cáncer de Próstata:</h2>
+
+<p>Toda lesión neoplásica que esté fuera de la pelvis verdadera y fuera del límite anatómico de la bifurcación de las arterias iliacas comunes.</p>
+
+<h3 id="clasificación-m">Clasificación M:</h3>
+<ul>
+  <li>M0: Sin metástasis a distancia</li>
+  <li>M1: Metástasis a distancia
+    <ul>
+      <li>M1a: Ganglio(s) linfático(s) no regional(es)</li>
+      <li>M1b:  Hueso(s)</li>
+      <li>M1c:  Otro(s) lugar(es)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="metástasis-a-distancia-en-cáncer-colorrectal">Metástasis a distancia en Cáncer Colorrectal:</h2>
+
+<p>Para definir la metástasis a distancia, es necesario conocer el compromiso de linfonodos regionales según segmento colorrectal. Las metástasis en ganglios distintos de los enumerados a continuación se clasifican como metástasis a distancia.</p>
+
+<p>Los ganglios linfáticos regionales son:</p>
+<ul>
+  <li><strong>Ciego</strong>: ganglios ileocólico y cólico derecho</li>
+  <li><strong>Colon</strong> ascendente: ganglios ileocólico, cólico derecho y cólico medio.</li>
+  <li><strong>Flexión hepática</strong>: ganglios cólico derecho y cólico medio.</li>
+  <li><strong>Transverso</strong>: ganglios colon cólico derecho, cólico medio, cólico izquierdo y mesentérico inferior.</li>
+  <li><strong>Esplénico</strong>: ganglios flexión cólica media, cólica izquierda y mesentérica inferior.</li>
+  <li><strong>Colon descendente</strong>: ganglios cólico izquierdo y mesentérico inferior.</li>
+  <li><strong>Colon sigmoide</strong>: ganglios sigmoide, cólico izquierdo, recto superior (hemorroidal), mesentérico inferior y rectosigmoide.</li>
+  <li><strong>Recto</strong>: ganglios rectal superior, medio e inferior (hemorroidal), mesentérico inferior, ilíaco interno, mesorrectal (paraproctal), sacro lateral, presacro y promontorio sacro (Gerota).</li>
+</ul>
+
+<h3 id="clasificación-m-1">Clasificación M:</h3>
+
+<ul>
+  <li>M0: Ausencia de metástasis a distancia</li>
+  <li>M1: Presencia de metástasis a distancia
+    <ul>
+      <li>M1a: Metástasis limitadas a un órgano (hígado, pulmón, ovario, ganglio(s) linfático(s) no regional(es)) sin metástasis peritoneales.</li>
+      <li>M1b: Metástasis en más de un órgano.</li>
+      <li>M1c: Metástasis en el peritoneo con o sin afectación de otros órganos TNM</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="metástasis-a-distancia-en-cáncer-de-mama">Metástasis a distancia en Cáncer de Mama:</h2>
+<p>Para definir la metástasis a distancia, es necesario conocer el compromiso de linfonodos regionales.</p>
+
+<p>Los ganglios linfáticos regionales son:</p>
+<ul>
+  <li>Axilares (ipsilaterales): ganglios interpectorales (Rotter) y ganglios linfáticos a lo largo de la vena axilar y sus afluentes, que pueden dividirse en los siguientes niveles:
+    <ul>
+      <li>Nivel I (axila baja): ganglios linfáticos laterales al borde lateral del músculo pectoral menor</li>
+      <li>Nivel II (axila media): ganglios linfáticos entre los bordes medial y lateral del músculo pectoral menor y los ganglios linfáticos interpectorales (Rotter)</li>
+      <li>Nivel III (axila apical): los ganglios linfáticos apicales y los que se encuentran medialmente al margen medial del músculo pectoral menor, excluyendo los designados como subclaviculares o infraclaviculares.</li>
+    </ul>
+  </li>
+  <li>Infraclavicular (subclavicular, ipsilateral)</li>
+  <li>Mamario interno (ipsilateral): ganglios linfáticos en los espacios intercostales a lo largo del borde del esternón en la fascia endotorácica.</li>
+  <li>Supraclavicular (ipsilateral)
+    <h2 id="clasificación-m-2">Clasificación M:</h2>
+  </li>
+  <li>M0: Ausencia de metástasis a distancia</li>
+  <li>M1: Presencia de metástasis a distancia</li>
+</ul>
+
+<h2 id="entidades-a-anotar">Entidades a Anotar</h2>
+
+<p>El objetivo de esta tarea es la anotar las menciones de las siguientes entidades descritas en cada documento:</p>
+<ul>
+  <li>Menciones de metástasis a distancia afirmativas</li>
+  <li>Menciones de metástasis a distancia negadas</li>
+  <li>Menciones de metástasis a distancia afirmativa, con atributo de incertidumbre.</li>
+</ul>
+
+<p>Los documentos a anotar corresponden a reportes de las siguientes técnicas imagenológicas, descritas por médico radiólogo:</p>
+<ul>
+  <li>Tomografía Computada</li>
+  <li>Resonancia Magnética</li>
+  <li>Tomografía de emisión de positrones con tomografía computada (PET-CT).</li>
+</ul>
+
+<p>Solo se deberá anotar <strong>la palabra o frase específica</strong> que indique presencia o ausencia de metástasis a distancia, es decir, donde se descarte.</p>
+
+<p>No se deberá anotar la parte del cuerpo u otra información extra a lo mencionado anteriormente.</p>
+
+<h2 id="etiquetas">Etiquetas</h2>
+
+<p>Según la clasificación TNM entonces, la clasificación de metástasis a distancia se define como <a href="">M</a>.</p>
+
+<p>En el caso de una mención del hallazgo de metástasis a distancia positiva o afirmativa, se definirá como <a href="">M1</a> con mención incierta <a href="">-</a></p>
+
+<pre><code class="language-ann">Sin embargo, persisten incontables focos hipermetabólicos en practicamente todo el esqueleto axial y apendicular visible, con SUV máximo 8,3 a nivel de L5.
+T1 M1 35 57 focos hipermetabólico
+A1 menciónincierta[-] T1
+</code></pre>
+
+<p>En el caso de una mención del hallazgo de metástasis a distancia negada o en caso de que se mencione para descartar, se definirá como <a href="">M0</a></p>
+
+<pre><code class="language-ann">Cuello: Los distintos compartimentos cervicales son de amplitud conservada, no se identifica masas ni adenopatías hipermetabólicas.
+T1 M0 93 98 masas
+T2 M0 102 130 adenopatías hipermetabólicas
+</code></pre>
+
+<p>En el caso de una mención incierta de metástasis, se</p>
+
+<h2 id="reglas-de-anotación">Reglas de Anotación</h2>
+
+<p>Para el desarrollo de un proceso de anotación coherente y de calidad, hemos definido las siguientes reglas:</p>
+
+<ul>
+  <li><strong>Reglas Generales (G)</strong> – Reglas generales del proceso de anotación</li>
+  <li><strong>Reglas Positivas (P)</strong> – Qué anotar</li>
+  <li><strong>Reglas Negativas (N)</strong> – Qué no anotar</li>
+  <li><strong>Reglas Ortográficas (O)</strong> – Consideraciones de ortografía y tipografía</li>
+</ul>
+
+<hr />
+
+:ET

@@ -20,7 +20,7 @@ baseurl: "/annodoc"
 homeurl: "/annodoc"
 editurl: "https://github.com/spyysalo/annodoc/edit/gh-pages"
 issueurl: "https://github.com/spyysalo/annodoc/issues"
-
+issueurl1: "/reglas_generales"
 ##############################################################################
 
 # Collection settings
