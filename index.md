@@ -103,6 +103,11 @@ El objetivo de esta tarea es la anotar las menciones de las siguientes entidades
 - Menciones de metástasis a distancia *negadas*, con atributo de mención incierta *negativo*.
 - Menciones de metástasis a distancia *afirmativa*, con atributo de mención incierta *positiva*.
 
+Además de anotar, a nivel de documento, según lo siguiente:
+- Metástasis a distancia ausente
+- Metástasis a distancia presente
+- Metástasis a distancia no determinada o incierta
+
 Los documentos a anotar corresponden a reportes de las siguientes técnicas imagenológicas, descritas por médico radiólogo:
 - Tomografía Computada
 - Resonancia Magnética
